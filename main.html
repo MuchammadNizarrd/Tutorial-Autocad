@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Pembelajaran AutoCAD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Program Pembelajaran AutoCAD</h1>
+            <p>Panduan Lengkap Gambar Teknik Bangunan</p>
+        </header>
+
+        <!-- Main Menu -->
+        <div id="mainMenu" class="menu">
+            <div class="menu-item" onclick="showContent(1)">
+                <div class="number">1</div>
+                <h3>Pengenalan Icon AutoCAD</h3>
+                <p>Toolbar dan perintah dasar AutoCAD yang perlu diketahui</p>
+            </div>
+
+            <div class="menu-item" onclick="showContent(2)">
+                <div class="number">2</div>
+                <h3>Pengaturan Unit, Dimension & Layer</h3>
+                <p>Konfigurasi dasar untuk memulai proyek gambar teknik</p>
+            </div>
+
+            <div class="menu-item" onclick="showContent(3)">
+                <div class="number">3</div>
+                <h3>Setting Ukuran Kertas</h3>
+                <p>Cara mengatur layout dan ukuran kertas untuk printing</p>
+            </div>
+
+            <div class="menu-item" onclick="showContent(4)">
+                <div class="number">4</div>
+                <h3>Symbol Tekstur & Arsiran</h3>
+                <p>Material hatch pattern untuk gambar teknik bangunan</p>
+            </div>
+
+            <div class="menu-item" onclick="showContent(5)">
+                <div class="number">5</div>
+                <h3>Persiapan Menggambar</h3>
+                <p>Checklist dan langkah-langkah sebelum mulai menggambar</p>
+            </div>
+        </div>
+
+        <!-- Content Section 1 -->
+        <div id="content1" class="content">
+            <h2>1. Pengenalan Icon (Toolbar) AutoCAD</h2>
+            
+            <!-- Overview Image -->
+            <div class="content-section">
+                <div class="overview-image">
+                    <img src="Assets/1. pengenalan icon dll/Gambar Pertama pengenalan isi dari autocad.png" alt="Interface AutoCAD" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+
+            <!-- Menu Bar Section -->
+            <div class="content-section">
+                <h3>📋 Menu Bar</h3>
+                <div class="image-container">
+                    <img src="Assets/1. pengenalan icon dll/Gambar dari menu bar.png" alt="Menu Bar AutoCAD" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                </div>
+                <p style="line-height: 1.8; margin-bottom: 15px;">
+                    <strong>Menu bar</strong> atau toolbars berfungsi untuk mengkategorikan tools pada suatu aplikasi. 
+                    Menu bar AutoCAD terdiri dari: <span class="badge">Home</span> <span class="badge">Insert</span> 
+                    <span class="badge">Annotate</span> <span class="badge">Parametric</span> <span class="badge">View</span> 
+                    <span class="badge">Manage</span> <span class="badge">Output</span> <span class="badge">Collaborate</span>
+                </p>
+                <div class="alert-box">
+                    <strong>� Tips:</strong> Apabila Menu Bar tidak muncul:<br>
+                    1. Ketik <code>menubar</code> lalu Enter<br>
+                    2. Masukkan nilai = <code>1</code> lalu Enter<br>
+                    3. Selesai, menubar akan tampil!
+                </div>
+            </div>
+
+            <!-- Toolbar Section -->
+            <div class="content-section">
+                <h3>🛠️ Toolbar (Alat Bantu Menggambar)</h3>
+                <div class="image-container">
+                    <img src="Assets/1. pengenalan icon dll/Gambar dari menu toolbar.png" alt="Toolbar AutoCAD" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                </div>
+                <p style="line-height: 1.8; margin-bottom: 15px;">
+                    Dalam menggambar menggunakan AutoCAD, toolbar adalah alat bantu utama untuk membantu proses pembuatan gambar.
+                </p>
+                
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Menu</th>
+                                <th>Fungsi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><strong>Line</strong></td>
+                                <td>Membuat garis dengan menentukan dua titik ujung, ujung garis sebelumnya menjadi titik awal garis berikutnya</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><strong>Ray</strong></td>
+                                <td>Garis bantu dari satu titik tumpu ke satu arah dengan panjang tidak terbatas</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><strong>Construction Line</strong></td>
+                                <td>Membuat garis tanpa batas, sering digunakan untuk grid bantu menggambar potongan rumah</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><strong>Polyline</strong></td>
+                                <td>Garis satu kesatuan yang dapat diatur ketebalannya pada awal maupun ujungnya</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><strong>Polygon</strong></td>
+                                <td>Membuat segi banyak dengan semua sisi sama panjang (minimal 3, maksimal 1024 sisi)</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><strong>Rectangle</strong></td>
+                                <td>Membuat kotak dengan menentukan titik diagonal</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><strong>Arc</strong></td>
+                                <td>Membuat busur lingkaran atau garis lengkung</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><strong>Circle</strong></td>
+                                <td>Membuat lingkaran atau objek bulat tertutup</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><strong>Donut</strong></td>
+                                <td>Membuat lingkaran dengan ketebalan tertentu (Inside & Outside diameter)</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><strong>Move</strong></td>
+                                <td>Memindah atau menggeser bidang</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td><strong>Copy</strong></td>
+                                <td>Memperbanyak bidang</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td><strong>Mirror</strong></td>
+                                <td>Mencerminkan suatu bidang</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td><strong>Offset</strong></td>
+                                <td>Menciptakan objek baru yang sama dengan jarak tertentu dari objek yang di-offset</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Command Line Section -->
+            <div class="content-section">
+                <h3>⌨️ Command Line</h3>
+                <div class="image-container">
+                    <img src="Assets/1. pengenalan icon dll/Gambar dari comad line.png" alt="Command Line AutoCAD" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                </div>
+                <p style="line-height: 1.8; margin-bottom: 15px;">
+                    Semua perintah yang dilakukan akan muncul pada command line. Pengguna AutoCAD dapat mengakses perintah 
+                    tidak hanya melalui Toolbar atau Menu Bar, tetapi juga langsung mengetik command.
+                </p>
+                
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Nama</th>
+                                <th>Fungsi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>A</code></td>
+                                <td>ARC</td>
+                                <td>Membuat garis melengkung</td>
+                            </tr>
+                            <tr>
+                                <td><code>AA</code></td>
+                                <td>AREA</td>
+                                <td>Menghitung area atau luas suatu bangunan</td>
+                            </tr>
+                            <tr>
+                                <td><code>AR</code></td>
+                                <td>ARRAY</td>
+                                <td>Memperbanyak jumlah bidang</td>
+                            </tr>
+                            <tr>
+                                <td><code>CH</code></td>
+                                <td>PROPERTIES</td>
+                                <td>Menampilkan menu properties</td>
+                            </tr>
+                            <tr>
+                                <td><code>D</code></td>
+                                <td>DIMSTYLE</td>
+                                <td>Memunculkan kotak dialog dimstyle manager</td>
+                            </tr>
+                            <tr>
+                                <td><code>DI</code></td>
+                                <td>DIST</td>
+                                <td>Mengetahui panjang suatu garis</td>
+                            </tr>
+                            <tr>
+                                <td><code>E</code></td>
+                                <td>ERASE</td>
+                                <td>Menghapus bidang</td>
+                            </tr>
+                            <tr>
+                                <td><code>EX</code></td>
+                                <td>EXTEND</td>
+                                <td>Memperpanjang garis</td>
+                            </tr>
+                            <tr>
+                                <td><code>F</code></td>
+                                <td>FILLET</td>
+                                <td>Melengkungkan sudut</td>
+                            </tr>
+                            <tr>
+                                <td><code>H</code></td>
+                                <td>HATCH</td>
+                                <td>Mengarsir garis</td>
+                            </tr>
+                            <tr>
+                                <td><code>L</code></td>
+                                <td>LINE</td>
+                                <td>Membuat garis</td>
+                            </tr>
+                            <tr>
+                                <td><code>O</code></td>
+                                <td>OFFSET</td>
+                                <td>Memperbanyak bidang berdasarkan jarak tertentu</td>
+                            </tr>
+                            <tr>
+                                <td><code>SC</code></td>
+                                <td>SCALE</td>
+                                <td>Merubah ukuran bidang berdasarkan skala</td>
+                            </tr>
+                            <tr>
+                                <td><code>TR</code></td>
+                                <td>TRIM</td>
+                                <td>Memotong objek</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Crosshair Section -->
+            <div class="content-section">
+                <h3>🎯 Crosshair (Kursor)</h3>
+                <div class="image-container">
+                    <img src="Assets/1. pengenalan icon dll/Gambar Croshair.png" alt="Crosshair AutoCAD" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                </div>
+                <p style="line-height: 1.8;">
+                    <strong>Crosshair</strong> berfungsi sebagai alat navigasi kita di AutoCAD. Kursor ini membantu 
+                    menentukan titik-titik koordinat saat menggambar.
+                </p>
+            </div>
+
+            <!-- Keyboard Shortcuts Section -->
+            <div class="content-section">
+                <h3>⌨️ Tombol Keyboard (Function Keys)</h3>
+                <div class="image-container">
+                    <img src="Assets/1. pengenalan icon dll/Gambar keyboard webp.webp" alt="Keyboard" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                </div>
+                
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Tombol</th>
+                                <th>Fungsi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><kbd>Esc</kbd></td>
+                                <td>Membatalkan perintah</td>
+                            </tr>
+                            <tr>
+                                <td><kbd>F1</kbd></td>
+                                <td>Menampilkan keterangan bantuan</td>
+                            </tr>
+                            <tr>
+                                <td><kbd>F2</kbd></td>
+                                <td>Menampilkan AutoCAD text window</td>
+                            </tr>
+                            <tr>
+                                <td><kbd>F3</kbd></td>
+                                <td>Mengaktifkan/menonaktifkan Osnap (mencari endpoint atau midpoint)</td>
+                            </tr>
+                            <tr>
+                                <td><kbd>F4</kbd></td>
+                                <td>Mengaktifkan/menonaktifkan fungsi Tablet</td>
+                            </tr>
+                            <tr>
+                                <td><kbd>F5</kbd></td>
+                                <td>Mengaktifkan isoplane (top, right, left) untuk penggambaran isometrik</td>
+                            </tr>
+                            <tr>
+                                <td><kbd>F6</kbd></td>
+                                <td>Mengaktifkan/menonaktifkan fungsi Coordinate</td>
+                            </tr>
+                            <tr>
+                                <td><kbd>F7</kbd></td>
+                                <td>Menampilkan/menghilangkan Grid</td>
+                            </tr>
+                            <tr>
+                                <td><kbd>F8</kbd></td>
+                                <td>Mengaktifkan/menonaktifkan Orthogonal (kursor bergerak vertikal/horizontal)</td>
+                            </tr>
+                            <tr>
+                                <td><kbd>F9</kbd></td>
+                                <td>Mengaktifkan/menonaktifkan Snap (lokasi presisi pada objek)</td>
+                            </tr>
+                            <tr>
+                                <td><kbd>F10</kbd></td>
+                                <td>Mengaktifkan/menonaktifkan Polar (melacak arah gerakan cursor)</td>
+                            </tr>
+                            <tr>
+                                <td><kbd>F11</kbd></td>
+                                <td>Mengaktifkan/menonaktifkan Object Snap Tracking</td>
+                            </tr>
+                            <tr>
+                                <td><kbd>F12</kbd></td>
+                                <td>Mengaktifkan/menonaktifkan Dynamic Input</td>
+                            </tr>
+                            <tr>
+                                <td><kbd>Enter</kbd></td>
+                                <td>Mengakhiri perintah</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <button class="back-btn" onclick="backToMenu()">← Kembali ke Menu</button>
+        </div>
+
+        <!-- Content Section 2 -->
+        <div id="content2" class="content">
+            <h2>2. Pengaturan Unit, Dimension & Layer</h2>
+            
+            <div class="alert-box" style="background: #d1ecf1; border-left-color: #0c5460;">
+                <strong>📌 Penting!</strong> Pengaturan ini harus dilakukan sebelum memulai menggambar untuk memastikan akurasi dan konsistensi gambar teknik.
+            </div>
+
+            <!-- UNIT SECTION -->
+            <div class="content-section">
+                <h3>📏 Mengatur Satuan (Unit)</h3>
+                <p style="line-height: 1.8; margin-bottom: 15px;">
+                    Menyeting satuan berfungsi untuk mengatur satuan dan precision (ketelitian) dalam menggambar.
+                </p>
+
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong>Buka Drawing Units</strong>
+                            <p>Ketik <code>units</code> pada command line, lalu tekan Enter</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong>Jendela Drawing Units akan muncul</strong>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/1). Gambar Pengaturan Unit.png" alt="Drawing Units" style="width: 100%; max-width: 500px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <strong>Setting satuan</strong>
+                            <p>Pada <strong>"Units to scale"</strong> pilih satuan yang diinginkan (Millimeters, Centimeters, Meters, dll)</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <strong>Ubah Precision</strong>
+                            <p>Ubah <strong>Precision</strong> menjadi <code>0</code> untuk bilangan bulat</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <strong>Simpan Pengaturan</strong>
+                            <p>Klik <strong>OK</strong> untuk menyimpan pengaturan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DIMENSION SECTION -->
+            <div class="content-section">
+                <h3>📐 Pengaturan Dimension (Dimensi)</h3>
+                <p style="line-height: 1.8; margin-bottom: 15px;">
+                    Dimension Style berfungsi untuk mengatur, merubah, mengedit, atau membuat tipe dimensi yang akan dipakai. 
+                    Pengaturan ini harus dilakukan <strong>sebelum</strong> membuat notasi dimensi.
+                </p>
+
+                <div class="info-box">
+                    <strong>🎯 Tujuan:</strong> Membuat dimensi dengan skala 1:100
+                </div>
+
+                <!-- Dimension Steps -->
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong>Aktifkan Dimension Style Manager</strong>
+                            <p>Ketik <code>D</code> atau <code>DIMSTYLE</code> pada command line</p>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/2). pengaturan dimension/Gambar langkah no 1.png" alt="Dimension Style Manager" style="width: 100%; max-width: 600px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong>Buat Dimensi Baru</strong>
+                            <p>Klik tombol <strong>New</strong> untuk membuat type dimensi baru</p>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/2). pengaturan dimension/Gambar langkah no 2.png" alt="Create New Dimension" style="width: 100%; max-width: 600px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <strong>Beri Nama Dimensi</strong>
+                            <p>Pada <strong>New Style Name</strong>, ganti nama menjadi <code>100</code> (untuk skala 1:100)</p>
+                            <p>Klik <strong>Continue</strong></p>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/2). pengaturan dimension/Gambar langkah no 3.png" alt="New Dimension Style" style="width: 100%; max-width: 600px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <strong>Menu Pengaturan Dimensi</strong>
+                            <div class="dimension-menus">
+                                <div class="dim-menu-item">
+                                    <span class="dim-icon">📏</span>
+                                    <strong>Lines</strong>
+                                    <p>Mengatur garis dimensi (ketebalan, jenis, warna)</p>
+                                </div>
+                                <div class="dim-menu-item">
+                                    <span class="dim-icon">➡️</span>
+                                    <strong>Symbols and Arrows</strong>
+                                    <p>Mengatur jenis symbol pangkal dan ujung dimensi</p>
+                                </div>
+                                <div class="dim-menu-item">
+                                    <span class="dim-icon">🔤</span>
+                                    <strong>Text</strong>
+                                    <p>Mengatur jenis teks, penempatan teks terhadap garis dimensi</p>
+                                </div>
+                                <div class="dim-menu-item">
+                                    <span class="dim-icon">📊</span>
+                                    <strong>Fit</strong>
+                                    <p>Mengatur penyesuaian elemen dimensi</p>
+                                </div>
+                                <div class="dim-menu-item">
+                                    <span class="dim-icon">🔢</span>
+                                    <strong>Primary Units</strong>
+                                    <p>Mengatur jumlah desimal dan unit format</p>
+                                </div>
+                                <div class="dim-menu-item">
+                                    <span class="dim-icon">�</span>
+                                    <strong>Alternate Units</strong>
+                                    <p>Mengatur satuan alternatif</p>
+                                </div>
+                                <div class="dim-menu-item">
+                                    <span class="dim-icon">⚠️</span>
+                                    <strong>Tolerances</strong>
+                                    <p>Mengatur toleransi dimensi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <strong>Pengaturan Text (Teks)</strong>
+                            <p>Klik menu <strong>Text</strong> untuk mengatur tampilan teks dimensi</p>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/2). pengaturan dimension/Gambar langkah no 4.png" alt="Text Settings" style="width: 100%; max-width: 700px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                            
+                            <div class="sub-settings">
+                                <h4>Text Appearance (Tampilan Teks)</h4>
+                                <ul>
+                                    <li><strong>Text Style:</strong> Mengatur tipe teks yang akan dipakai</li>
+                                    <li><strong>Text Color:</strong> Mengatur warna teks</li>
+                                    <li><strong>Fill Color:</strong> Mengatur warna background teks</li>
+                                    <li><strong>Text Height:</strong> Mengatur ketinggian/ukuran teks</li>
+                                </ul>
+
+                                <h4>Text Placement (Posisi Teks)</h4>
+                                <ul>
+                                    <li><strong>Vertical:</strong> Posisi teks terhadap garis dimensi arah vertikal</li>
+                                    <li><strong>Horizontal:</strong> Posisi teks terhadap garis dimensi arah horizontal</li>
+                                    <li><strong>Offset from dim line:</strong> Jarak teks terhadap garis dimensi</li>
+                                </ul>
+
+                                <h4>Text Alignment (Perataan Teks)</h4>
+                                <ul>
+                                    <li><strong>Horizontal:</strong> Teks selalu horizontal</li>
+                                    <li><strong>Aligned with dimension line:</strong> Teks mengikuti arah dimensi</li>
+                                    <li><strong>ISO Standard:</strong> Standar ISO</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <strong>Pengaturan Lines (Garis)</strong>
+                            <p>Klik menu <strong>Lines</strong> untuk mengatur jenis garis dimensi</p>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/2). pengaturan dimension/Gambar langkah no 5.png" alt="Lines Settings" style="width: 100%; max-width: 700px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">7</div>
+                        <div class="step-content">
+                            <strong>Pengaturan Symbols and Arrows</strong>
+                            <p>Klik menu <strong>Symbols and Arrows</strong> untuk mengatur tanda panah dimensi</p>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/2). pengaturan dimension/Gambar langkah no 6.png" alt="Symbols and Arrows" style="width: 100%; max-width: 700px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">8</div>
+                        <div class="step-content">
+                            <strong>Pengaturan Primary Units</strong>
+                            <p>Klik menu <strong>Primary Units</strong> untuk mengatur satuan utama</p>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/2). pengaturan dimension/Gambar langkah no 7.png" alt="Primary Units" style="width: 100%; max-width: 700px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">9</div>
+                        <div class="step-content">
+                            <strong>Simpan dan Aktifkan Dimensi</strong>
+                            <p>Klik <strong>OK</strong> untuk kembali ke Dimension Style Manager</p>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/2). pengaturan dimension/Gambar langkah no 8.png" alt="Set Current" style="width: 100%; max-width: 600px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                            <p style="margin-top: 15px;">Pilih dimensi <code>100</code> pada Styles, klik <strong>Set Current</strong> untuk mengaktifkan, lalu klik <strong>Close</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LAYER SECTION -->
+            <div class="content-section">
+                <h3>🗂️ Pengaturan Layer</h3>
+                <p style="line-height: 1.8; margin-bottom: 15px;">
+                    Layer berfungsi untuk mengorganisir objek gambar berdasarkan kategori tertentu (dinding, pintu, jendela, dll) 
+                    dengan pengaturan warna, jenis garis, dan ketebalan yang berbeda.
+                </p>
+
+                <div class="info-box" style="background: #d4edda; border-left-color: #28a745;">
+                    <strong>💡 Tips:</strong> Gunakan layer untuk memudahkan editing dan menampilkan/menyembunyikan elemen tertentu
+                </div>
+
+                <!-- Layer Steps -->
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong>Buka Layer Properties</strong>
+                            <p>Pada tab ribbon <strong>Home</strong> atau ketik <code>LA</code> pada command line</p>
+                            <p>Klik <strong>New Layer</strong></p>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/3). pengaturan layer/Gambar untuk no 1.png" alt="Layer Properties" style="width: 100%; max-width: 800px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong>Rename Layer</strong>
+                            <p>Layer baru dengan nama <strong>Layer 1</strong> akan muncul</p>
+                            <p>Ganti nama layer sesuai kebutuhan, misalnya: <code>dinding</code>, <code>pintu</code>, <code>jendela</code>, dll</p>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/3). pengaturan layer/Gambar untuk no 2.png" alt="Rename Layer" style="width: 100%; max-width: 800px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <strong>Atur Warna Layer</strong>
+                            <p>Pada kolom <strong>Color</strong>, klik kotak warna</p>
+                            <p>Pilih warna sesuai kebutuhan (misalnya: merah untuk dinding)</p>
+                            <p>Klik <strong>OK</strong></p>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/3). pengaturan layer/Gambar untuk no 2 lgi.png" alt="Color Selection" style="width: 100%; max-width: 500px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/3). pengaturan layer/Gambar untuk no 3.png" alt="Layer Color Set" style="width: 100%; max-width: 800px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                            <div class="alert-box" style="background: #fff3cd; border-left-color: #ffc107; margin-top: 15px;">
+                                <strong>⚠️ Catatan:</strong> Dalam situasi tertentu, warna objek sudah dibakukan dalam standar penggambaran teknik
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <strong>Atur Jenis Garis (Linetype)</strong>
+                            <p>Double klik pada <strong>Linetype</strong> layer dinding</p>
+                            <p>Akan keluar kotak dialog <strong>Select Linetype</strong></p>
+                            <p>Pilih jenis garis yang diinginkan (Continuous, Dashed, Center, dll)</p>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/3). pengaturan layer/Gambar untuk no 4.png" alt="Linetype Settings" style="width: 100%; max-width: 800px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <strong>Atur Ketebalan Garis (Lineweight)</strong>
+                            <p>Double klik pada <strong>Lineweight</strong> layer dinding</p>
+                            <p>Pilih ketebalan garis yang dibutuhkan (0.25mm, 0.50mm, 0.70mm, dll)</p>
+                            <p>Klik <strong>OK</strong></p>
+                            <div class="image-container">
+                                <img src="Assets/2. pengaturan unit, dimension, layer/3). pengaturan layer/Gambar untuk n 5.png" alt="Lineweight Settings" style="width: 100%; max-width: 500px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <strong>Aktifkan Layer</strong>
+                            <p>Double klik pada layer <strong>dinding</strong> yang baru dibuat</p>
+                            <p>Tanda centang hijau (✓) akan muncul, menandakan layer sudah aktif</p>
+                            <div class="success-box">
+                                ✅ Layer <strong>dinding</strong> sekarang aktif dan siap digunakan!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Layer Best Practices -->
+                <div class="tips-box">
+                    <h4>📚 Contoh Penamaan Layer yang Baik:</h4>
+                    <div class="layer-examples">
+                        <span class="layer-tag">DINDING</span>
+                        <span class="layer-tag">PINTU</span>
+                        <span class="layer-tag">JENDELA</span>
+                        <span class="layer-tag">FURNITURE</span>
+                        <span class="layer-tag">DIMENSI</span>
+                        <span class="layer-tag">TEXT</span>
+                        <span class="layer-tag">HATCH</span>
+                        <span class="layer-tag">GRID</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="back-btn" onclick="backToMenu()">← Kembali ke Menu</button>
+        </div>
+
+        <!-- Content Section 3 -->
+        <div id="content3" class="content">
+            <h2>3. Cara Setting Ukuran Kertas</h2>
+            
+            <div class="alert-box" style="background: #d1ecf1; border-left-color: #0c5460;">
+                <strong>🎯 Tujuan:</strong> Membuat template kertas gambar (kop gambar) dengan standar ukuran yang bisa digunakan untuk berbagai skala.
+            </div>
+
+            <!-- Paper Size Info -->
+            <div class="content-section">
+                <h3>📄 Ukuran Kertas Standar</h3>
+                <div class="paper-sizes">
+                    <div class="paper-card">
+                        <div class="paper-name">A4</div>
+                        <div class="paper-dim">210 × 297 mm</div>
+                    </div>
+                    <div class="paper-card">
+                        <div class="paper-name">A3</div>
+                        <div class="paper-dim">297 × 420 mm</div>
+                    </div>
+                    <div class="paper-card">
+                        <div class="paper-name">A2</div>
+                        <div class="paper-dim">420 × 594 mm</div>
+                    </div>
+                    <div class="paper-card">
+                        <div class="paper-name">A1</div>
+                        <div class="paper-dim">594 × 841 mm</div>
+                    </div>
+                    <div class="paper-card">
+                        <div class="paper-name">A0</div>
+                        <div class="paper-dim">841 × 1189 mm</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial Steps -->
+            <div class="content-section">
+                <h3>📝 Langkah-Langkah Membuat Kop Gambar</h3>
+                <p style="line-height: 1.8; margin-bottom: 20px;">
+                    Contoh: Membuat kop gambar untuk kertas <strong>A4 (210 × 297 mm)</strong>
+                </p>
+
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong>Buat Rectangle (Kotak)</strong>
+                            <p>Ketik <code>RECTANGLE</code> atau <code>REC</code> di command prompt, lalu tekan Enter</p>
+                            <div class="image-container">
+                                <img src="Assets/3. cara setting ukuran kertas/Gambar untuk no 1.png" alt="Rectangle Command" style="width: 100%; max-width: 700px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong>Tentukan Titik Awal</strong>
+                            <p>Klik di area kerja untuk menentukan titik awal rectangle</p>
+                            <div class="info-box">
+                                � Pilih lokasi di area kerja AutoCAD sebagai titik referensi awal
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <strong>Input Dimensi Kertas</strong>
+                            <p>Pada prompt <strong>"Specify other corner point"</strong>, masukkan dimensi kertas:</p>
+                            <div class="command-box">
+                                <code>@210,297</code>
+                            </div>
+                            <p style="margin-top: 10px;">Lalu tekan <kbd>Enter</kbd></p>
+                            <div class="image-container">
+                                <img src="Assets/3. cara setting ukuran kertas/Gambar untuk no 3.png" alt="Input Dimensi" style="width: 100%; max-width: 700px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                            <div class="formula-box">
+                                <strong>Format:</strong> <code>@lebar,tinggi</code><br>
+                                <strong>Contoh:</strong><br>
+                                • A4: <code>@210,297</code><br>
+                                • A3: <code>@297,420</code><br>
+                                • A2: <code>@420,594</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <strong>Explode Rectangle</strong>
+                            <p>Klik gambar rectangle yang baru dibuat</p>
+                            <p>Ketik <code>X</code> (Explode) lalu tekan Enter atau Spasi</p>
+                            <div class="image-container">
+                                <img src="Assets/3. cara setting ukuran kertas/Gambar untuk no 4.jpg" alt="Explode Rectangle" style="width: 100%; max-width: 700px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                            <div class="alert-box" style="background: #fff3cd; border-left-color: #ffc107;">
+                                <strong>ℹ️ Kenapa Explode?</strong> Agar rectangle menjadi garis-garis terpisah yang bisa di-edit individual
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <strong>Buat Garis Batas Dalam (Margin)</strong>
+                            <p>Gunakan perintah <code>OFFSET</code> untuk membuat margin/batas dalam:</p>
+                            
+                            <div class="offset-guide">
+                                <div class="offset-item">
+                                    <div class="offset-side">Sisi Kanan</div>
+                                    <div class="offset-value">100 mm ke dalam</div>
+                                </div>
+                                <div class="offset-item">
+                                    <div class="offset-side">Sisi Atas</div>
+                                    <div class="offset-value">100 mm ke dalam</div>
+                                </div>
+                                <div class="offset-item">
+                                    <div class="offset-side">Sisi Bawah</div>
+                                    <div class="offset-value">100 mm ke dalam</div>
+                                </div>
+                                <div class="offset-item highlight">
+                                    <div class="offset-side">Sisi Kiri</div>
+                                    <div class="offset-value">200 mm ke dalam</div>
+                                    <small>*Lebih besar karena bagian yang terkena jilid</small>
+                                </div>
+                            </div>
+
+                            <div class="tutorial-steps-mini">
+                                <p><strong>Cara Offset:</strong></p>
+                                <ol>
+                                    <li>Ketik <code>O</code> atau <code>OFFSET</code></li>
+                                    <li>Masukkan jarak (100 atau 200)</li>
+                                    <li>Klik garis yang akan di-offset</li>
+                                    <li>Klik arah offset (ke dalam)</li>
+                                    <li>Tekan Enter/Spasi untuk selesai</li>
+                                </ol>
+                            </div>
+
+                            <div class="image-container">
+                                <img src="Assets/3. cara setting ukuran kertas/Gambar untuk no 5(1).png" alt="Offset Step 1" style="width: 100%; max-width: 700px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                            <div class="image-container">
+                                <img src="Assets/3. cara setting ukuran kertas/Gambar untuk no 5(2).png" alt="Offset Step 2" style="width: 100%; max-width: 700px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <strong>Buat Kolom Identitas</strong>
+                            <p>Buat kolom identitas/kop gambar sesuai keperluan di bagian bawah atau pojok kanan bawah</p>
+                            <div class="image-container">
+                                <img src="Assets/3. cara setting ukuran kertas/Gambar untuk no 6.png" alt="Kolom Identitas" style="width: 100%; max-width: 700px; border-radius: 8px; margin-top: 10px;">
+                            </div>
+                            
+                            <div class="identity-box">
+                                <h4>📋 Isi Kolom Identitas Biasanya Meliputi:</h4>
+                                <div class="identity-grid">
+                                    <span class="identity-item">📝 Judul Gambar</span>
+                                    <span class="identity-item">📐 Skala</span>
+                                    <span class="identity-item">👤 Nama Pembuat</span>
+                                    <span class="identity-item">📅 Tanggal</span>
+                                    <span class="identity-item">🏢 Nama Proyek</span>
+                                    <span class="identity-item">📄 No. Gambar</span>
+                                    <span class="identity-item">✅ Persetujuan</span>
+                                    <span class="identity-item">📏 Satuan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">7</div>
+                        <div class="step-content">
+                            <strong>Kop Gambar Siap Digunakan! 🎉</strong>
+                            <div class="success-box">
+                                ✅ Template kop gambar siap digunakan untuk berbagai ukuran kertas sesuai skala yang diperlukan
+                            </div>
+                            
+                            <div class="tips-box">
+                                <h4>💡 Tips Penggunaan:</h4>
+                                <ul>
+                                    <li>Simpan sebagai template (.dwt) untuk digunakan berulang kali</li>
+                                    <li>Buat template untuk setiap ukuran kertas standar (A4, A3, A2, dll)</li>
+                                    <li>Gunakan layer berbeda untuk garis tepi dan kolom identitas</li>
+                                    <li>Sesuaikan ukuran teks dengan skala gambar yang akan dibuat</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Reference -->
+            <div class="content-section">
+                <h3>⚡ Referensi Cepat</h3>
+                <div class="quick-ref">
+                    <div class="ref-card">
+                        <h4>📦 Command Utama</h4>
+                        <ul>
+                            <li><code>RECTANGLE</code> - Buat kotak</li>
+                            <li><code>X (EXPLODE)</code> - Pecah objek</li>
+                            <li><code>O (OFFSET)</code> - Duplikat dengan jarak</li>
+                        </ul>
+                    </div>
+                    <div class="ref-card">
+                        <h4>📏 Margin Standar</h4>
+                        <ul>
+                            <li>Kiri: <strong>200 mm</strong> (jilid)</li>
+                            <li>Kanan: <strong>100 mm</strong></li>
+                            <li>Atas: <strong>100 mm</strong></li>
+                            <li>Bawah: <strong>100 mm</strong></li>
+                        </ul>
+                    </div>
+                    <div class="ref-card">
+                        <h4>📐 Format Input</h4>
+                        <ul>
+                            <li>Rectangle: <code>@lebar,tinggi</code></li>
+                            <li>A4: <code>@210,297</code></li>
+                            <li>A3: <code>@297,420</code></li>
+                            <li>A2: <code>@420,594</code></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button class="back-btn" onclick="backToMenu()">← Kembali ke Menu</button>
+        </div>
+
+        <!-- Content Section 4 -->
+        <div id="content4" class="content">
+            <h2>4. Symbol Tekstur & Arsiran Material</h2>
+            
+            <div class="alert-box" style="background: #d1ecf1; border-left-color: #0c5460;">
+                <strong>📌 Penting!</strong> Setiap material bangunan memiliki simbol arsiran (hatch pattern) yang berbeda sesuai standar gambar teknik bangunan.
+            </div>
+
+            <div class="content-section">
+                <h3>🎨 Apa itu Arsiran (Hatch)?</h3>
+                <p style="line-height: 1.8; margin-bottom: 15px;">
+                    <strong>Arsiran (Hatch)</strong> adalah pola tekstur yang digunakan untuk menunjukkan jenis material 
+                    yang digunakan dalam gambar potongan atau detail bangunan. Setiap material memiliki simbol arsiran 
+                    yang khas dan sudah distandardisasi.
+                </p>
+                
+                <div class="info-box">
+                    <strong>💡 Fungsi Arsiran:</strong><br>
+                    • Membedakan jenis material dalam gambar potongan<br>
+                    • Memudahkan identifikasi bahan bangunan<br>
+                    • Memperjelas detail konstruksi<br>
+                    • Mengikuti standar gambar teknik
+                </div>
+            </div>
+
+            <!-- Material Grid -->
+            <div class="content-section">
+                <h3>🏗️ Simbol Arsiran Material Bangunan</h3>
+                <p style="line-height: 1.8; margin-bottom: 20px;">
+                    Berikut adalah simbol-simbol arsiran material yang sering digunakan dalam gambar teknik bangunan:
+                </p>
+
+                <div class="material-grid">
+                    <!-- Beton -->
+                    <div class="material-card">
+                        <div class="material-image">
+                            <img src="Assets/4. pengenalan arsiran/Gambar Beton.png" alt="Arsiran Beton">
+                        </div>
+                        <div class="material-info">
+                            <div class="material-name">Beton</div>
+                            <div class="material-desc">Material campuran semen, pasir, kerikil dan air</div>
+                        </div>
+                    </div>
+
+                    <!-- Beton Bertulang -->
+                    <div class="material-card">
+                        <div class="material-image">
+                            <img src="Assets/4. pengenalan arsiran/Gambar beton bertulang.png" alt="Arsiran Beton Bertulang">
+                        </div>
+                        <div class="material-info">
+                            <div class="material-name">Beton Bertulang</div>
+                            <div class="material-desc">Beton yang diperkuat dengan besi tulangan</div>
+                        </div>
+                    </div>
+
+                    <!-- Batu Kali -->
+                    <div class="material-card">
+                        <div class="material-image">
+                            <img src="Assets/4. pengenalan arsiran/Gambar Batu kali.png" alt="Arsiran Batu Kali">
+                        </div>
+                        <div class="material-info">
+                            <div class="material-name">Batu Kali</div>
+                            <div class="material-desc">Batu alam untuk pondasi dan dinding penahan</div>
+                        </div>
+                    </div>
+
+                    <!-- Pasir -->
+                    <div class="material-card">
+                        <div class="material-image">
+                            <img src="Assets/4. pengenalan arsiran/Gambar pasir.png" alt="Arsiran Pasir">
+                        </div>
+                        <div class="material-info">
+                            <div class="material-name">Pasir</div>
+                            <div class="material-desc">Material halus untuk campuran atau urugan</div>
+                        </div>
+                    </div>
+
+                    <!-- Tanah Liat/Urug -->
+                    <div class="material-card">
+                        <div class="material-image">
+                            <img src="Assets/4. pengenalan arsiran/Gambar tanah liat_urug.png" alt="Arsiran Tanah Liat">
+                        </div>
+                        <div class="material-info">
+                            <div class="material-name">Tanah Liat / Urug</div>
+                            <div class="material-desc">Tanah untuk urugan atau timbunan</div>
+                        </div>
+                    </div>
+
+                    <!-- Genteng -->
+                    <div class="material-card">
+                        <div class="material-image">
+                            <img src="Assets/4. pengenalan arsiran/Gambar genteng.png" alt="Arsiran Genteng">
+                        </div>
+                        <div class="material-info">
+                            <div class="material-name">Genteng</div>
+                            <div class="material-desc">Penutup atap dari tanah liat atau beton</div>
+                        </div>
+                    </div>
+
+                    <!-- Pasangan Bata -->
+                    <div class="material-card">
+                        <div class="material-image">
+                            <img src="Assets/4. pengenalan arsiran/Gambar pasangan bata.png" alt="Arsiran Pasangan Bata">
+                        </div>
+                        <div class="material-info">
+                            <div class="material-name">Pasangan Bata</div>
+                            <div class="material-desc">Bata merah untuk dinding dan struktur</div>
+                        </div>
+                    </div>
+
+                    <!-- Permukaan Tanah -->
+                    <div class="material-card">
+                        <div class="material-image">
+                            <img src="Assets/4. pengenalan arsiran/Gambar Permukaan tanah.png" alt="Arsiran Permukaan Tanah">
+                        </div>
+                        <div class="material-info">
+                            <div class="material-name">Permukaan Tanah</div>
+                            <div class="material-desc">Lapisan tanah permukaan existing</div>
+                        </div>
+                    </div>
+
+                    <!-- Trasram -->
+                    <div class="material-card">
+                        <div class="material-image">
+                            <img src="Assets/4. pengenalan arsiran/Gambar trasram.png" alt="Arsiran Trasram">
+                        </div>
+                        <div class="material-info">
+                            <div class="material-name">Trasram</div>
+                            <div class="material-desc">Lapisan pengunci/penahan di atas pondasi</div>
+                        </div>
+                    </div>
+
+                    <!-- Lantai Kerja Beton -->
+                    <div class="material-card">
+                        <div class="material-image">
+                            <img src="Assets/4. pengenalan arsiran/Gambar lantai kerja beton.png" alt="Arsiran Lantai Kerja Beton">
+                        </div>
+                        <div class="material-info">
+                            <div class="material-name">Lantai Kerja Beton</div>
+                            <div class="material-desc">Lapisan beton tipis sebagai dasar pekerjaan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Use Hatch -->
+            <div class="content-section">
+                <h3>🛠️ Cara Menggunakan Arsiran di AutoCAD</h3>
+                
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong>Aktifkan Perintah Hatch</strong>
+                            <p>Ketik <code>H</code> atau <code>HATCH</code> pada command line, lalu tekan Enter</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong>Pilih Pattern (Pola Arsiran)</strong>
+                            <p>Pada jendela Hatch Creation, klik dropdown Pattern dan pilih jenis arsiran sesuai material</p>
+                            <div class="tips-box">
+                                <strong>💡 Tips:</strong> AutoCAD menyediakan berbagai pattern standar seperti ANSI31, SOLID, GRAVEL, EARTH, dll
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <strong>Tentukan Area yang Akan Diarsir</strong>
+                            <p>Klik tombol <strong>"Pick Points"</strong> atau <strong>"Select Objects"</strong></p>
+                            <ul style="margin-top: 10px; padding-left: 25px;">
+                                <li><strong>Pick Points:</strong> Klik di dalam area tertutup</li>
+                                <li><strong>Select Objects:</strong> Pilih objek pembatas area</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <strong>Atur Properties Arsiran</strong>
+                            <div class="hatch-properties">
+                                <div class="prop-item">
+                                    <span class="prop-icon">📐</span>
+                                    <strong>Scale</strong>
+                                    <p>Mengatur skala/ukuran pola arsiran</p>
+                                </div>
+                                <div class="prop-item">
+                                    <span class="prop-icon">🔄</span>
+                                    <strong>Angle</strong>
+                                    <p>Mengatur sudut rotasi pola arsiran</p>
+                                </div>
+                                <div class="prop-item">
+                                    <span class="prop-icon">🎨</span>
+                                    <strong>Color</strong>
+                                    <p>Mengatur warna arsiran</p>
+                                </div>
+                                <div class="prop-item">
+                                    <span class="prop-icon">📊</span>
+                                    <strong>Transparency</strong>
+                                    <p>Mengatur transparansi arsiran</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <strong>Terapkan Arsiran</strong>
+                            <p>Klik tombol <strong>OK</strong> atau tekan <kbd>Enter</kbd> untuk menerapkan arsiran</p>
+                            <div class="success-box">
+                                ✅ Arsiran berhasil diterapkan pada area yang dipilih!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Common Hatch Patterns -->
+            <div class="content-section">
+                <h3>📚 Pattern AutoCAD yang Umum Digunakan</h3>
+                <div class="pattern-list">
+                    <div class="pattern-item">
+                        <div class="pattern-name">ANSI31</div>
+                        <div class="pattern-use">Beton, baja, material umum</div>
+                    </div>
+                    <div class="pattern-item">
+                        <div class="pattern-name">ANSI32</div>
+                        <div class="pattern-use">Baja struktural</div>
+                    </div>
+                    <div class="pattern-item">
+                        <div class="pattern-name">SOLID</div>
+                        <div class="pattern-use">Arsiran penuh tanpa pola</div>
+                    </div>
+                    <div class="pattern-item">
+                        <div class="pattern-name">EARTH</div>
+                        <div class="pattern-use">Tanah, urugan</div>
+                    </div>
+                    <div class="pattern-item">
+                        <div class="pattern-name">GRAVEL</div>
+                        <div class="pattern-use">Kerikil, batu kali</div>
+                    </div>
+                    <div class="pattern-item">
+                        <div class="pattern-name">AR-CONC</div>
+                        <div class="pattern-use">Beton (Architectural)</div>
+                    </div>
+                    <div class="pattern-item">
+                        <div class="pattern-name">AR-SAND</div>
+                        <div class="pattern-use">Pasir (Architectural)</div>
+                    </div>
+                    <div class="pattern-item">
+                        <div class="pattern-name">AR-BRSTD</div>
+                        <div class="pattern-use">Bata (Architectural)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Best Practices -->
+            <div class="content-section">
+                <div class="tips-box">
+                    <h4>💡 Tips & Best Practices Menggunakan Arsiran</h4>
+                    <ul style="line-height: 2; margin-top: 15px;">
+                        <li>✅ Gunakan layer terpisah untuk arsiran agar mudah di-edit</li>
+                        <li>✅ Sesuaikan scale arsiran dengan skala gambar</li>
+                        <li>✅ Gunakan warna yang kontras agar mudah dibaca</li>
+                        <li>✅ Hindari arsiran yang terlalu rapat atau terlalu renggang</li>
+                        <li>✅ Konsisten dalam penggunaan pattern untuk material yang sama</li>
+                        <li>✅ Buat legend/keterangan material di layout</li>
+                        <li>✅ Gunakan <code>HATCHEDIT</code> untuk mengedit arsiran yang sudah ada</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Quick Commands -->
+            <div class="content-section">
+                <h3>⚡ Command Cepat Arsiran</h3>
+                <div class="quick-ref">
+                    <div class="ref-card">
+                        <h4>📦 Perintah Utama</h4>
+                        <ul>
+                            <li><code>H / HATCH</code> - Buat arsiran baru</li>
+                            <li><code>HE / HATCHEDIT</code> - Edit arsiran</li>
+                            <li><code>BOUNDARY</code> - Buat boundary</li>
+                        </ul>
+                    </div>
+                    <div class="ref-card">
+                        <h4>🎯 Shortcut Keyboard</h4>
+                        <ul>
+                            <li><kbd>Enter</kbd> - Terapkan arsiran</li>
+                            <li><kbd>Esc</kbd> - Batal</li>
+                            <li><kbd>Spasi</kbd> - Ulangi perintah</li>
+                        </ul>
+                    </div>
+                    <div class="ref-card">
+                        <h4>⚙️ Tips Editing</h4>
+                        <ul>
+                            <li>Double-click arsiran untuk edit</li>
+                            <li>Gunakan Properties (CTRL+1)</li>
+                            <li>Match Properties (MA) untuk copy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button class="back-btn" onclick="backToMenu()">← Kembali ke Menu</button>
+        </div>
+
+        <!-- Content Section 5 -->
+        <div id="content5" class="content">
+            <h2>5. Persiapan Menggambar</h2>
+            
+            <div class="alert-box" style="background: #d1ecf1; border-left-color: #0c5460;">
+                <strong>🧭 Tujuan:</strong> Latihan dasar menggambar: Line, Trim, Offset, dan Hatch. Cocok untuk pemula.
+            </div>
+
+            <!-- Lines Section -->
+            <div class="content-section">
+                <h3>📏 1) Membuat Objek Garis</h3>
+                <p style="line-height: 1.8; margin-bottom: 15px;">
+                    Garis ada dua macam: <strong>lurus</strong> dan <strong>bersudut</strong>. Gunakan perintah <code>L</code> atau klik toolbar Line.
+                </p>
+
+                <div class="info-box">
+                    <strong>💡 Penting:</strong> Pembuatan garis tidak akan putus bila tidak diakhiri. Tekan <kbd>Enter</kbd> atau <kbd>Space</kbd> untuk mengakhiri perintah garis.
+                </div>
+
+                <div class="steps-container">
+                    <!-- Cara 1: Garis Bebas -->
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong>Cara 1: Membuat Garis Bebas</strong>
+                            <p>Ketik <code>L</code> lalu Enter atau klik toolbar Line</p>
+                            <p>Klik di layar AutoCAD (titik awal), klik lagi di tempat lain untuk membuat garis</p>
+                            <p>Tekan <kbd>Enter</kbd> atau <kbd>Space</kbd> untuk mengakhiri</p>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/1). membuat objek garis/langkah pertama cara 1.png" alt="Garis Bebas" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cara 2: Garis dengan Ukuran -->
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong>Cara 2: Membuat Garis dengan Ukuran Presisi</strong>
+                            <p>Menggunakan sistem <strong>koordinat relatif</strong></p>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/1). membuat objek garis/langkah pertama cara 2.png" alt="Koordinat Relatif" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cara 3: Membuat Kotak -->
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <strong>Cara 3: Membuat Kotak 500 × 500</strong>
+                            <p style="margin-bottom: 10px;">Langkah-langkah:</p>
+                            <ol style="margin-left: 20px; line-height: 2;">
+                                <li>Ketik <code>L</code> lalu Enter atau klik toolbar Line</li>
+                                <li>Klik di layar AutoCAD (sebagai titik awal)</li>
+                                <li>Tarik mouse ke arah <strong>kanan</strong>, ketik <code>500</code> lalu Enter</li>
+                                <li>Tarik mouse ke arah <strong>atas</strong>, ketik <code>500</code> lalu Enter</li>
+                                <li>Tarik mouse ke arah <strong>kiri</strong>, ketik <code>500</code> lalu Enter</li>
+                                <li>Ketik <code>C</code> lalu Enter (perintah Close untuk menutup objek)</li>
+                            </ol>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/1). membuat objek garis/langkah pertama cara 3.png" alt="Kotak 500x500" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                            <div class="alert-box" style="background: #fff3cd; border-left-color: #ffc107;">
+                                <strong>⚠️ Catatan:</strong> Perintah <code>C</code> (Close) hanya berlaku bila garis belum pernah dieksekusi/diakhiri. Jika garis sudah terputus, perintah C tidak akan berfungsi.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hasil Akhir -->
+                    <div class="step-item">
+                        <div class="step-number">✓</div>
+                        <div class="step-content">
+                            <strong>Hasil Akhir Pembuatan Garis</strong>
+                            <p>Berikut adalah contoh hasil dari berbagai teknik pembuatan garis:</p>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/1). membuat objek garis/langkah kedua cara 1.png" alt="Hasil Garis 1" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/1). membuat objek garis/langkah kedua cara 2.png" alt="Hasil Garis 2" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trim Section -->
+            <div class="content-section">
+                <h3>✂️ 2) Memotong / Menghapus Garis Berpotongan (TRIM)</h3>
+                <p style="line-height:1.8; margin-bottom: 15px;">
+                    Perintah <code>TRIM</code> digunakan untuk menghapus bagian garis yang berpotongan dengan menggunakan garis pembatas.
+                    Garis pembatas berfungsi sebagai batas pemotongan garis yang akan dihapus.
+                </p>
+
+                <div class="alert-box" style="background: #fff3cd; border-left-color: #ffc107;">
+                    <strong>⚠️ Penting:</strong> Perintah Trim hanya berlaku bagi garis yang berpotongan. Bila garis tidak berpotongan, hapus secara manual dengan perintah ERASE.
+                </div>
+
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong>Buat Garis Berpotongan</strong>
+                            <p>Gambar beberapa garis lurus yang saling berpotongan di layar kerja AutoCAD</p>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/2). memotong atau menghapus/gambar langkah 1.png" alt="Garis Berpotongan" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong>Aktifkan Perintah Trim</strong>
+                            <p>Ketik <code>TR</code> lalu tekan Enter <strong>2 kali</strong></p>
+                            <p>Atau klik toolbar <strong>Trim</strong> lalu tekan Enter</p>
+                            <div class="command-box">
+                                <code>TR</code> → Enter → Enter
+                            </div>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/2). memotong atau menghapus/gambar langkah 2.png" alt="Perintah Trim" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <strong>Klik Garis yang Akan Dihapus</strong>
+                            <p>Setelah perintah Trim aktif, klik pada bagian garis yang ingin dihapus</p>
+                            <p>Garis yang diklik akan terpotong sesuai dengan garis pembatas terdekat</p>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/2). memotong atau menghapus/gambar langkah 3.png" alt="Hasil Trim" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                            <div class="success-box">
+                                ✅ Garis berhasil dipotong! Tekan <kbd>Enter</kbd> atau <kbd>Esc</kbd> untuk mengakhiri perintah Trim.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h4>💡 Tips Menggunakan Trim</h4>
+                    <ul style="line-height: 1.8;">
+                        <li>✅ Tekan Enter 2x untuk memilih semua objek sebagai cutting edge (garis pembatas)</li>
+                        <li>✅ Klik bagian garis yang ingin dihapus, bukan garis pembatasnya</li>
+                        <li>✅ Gunakan EXTEND (perintah EX) untuk kebalikan dari Trim (memperpanjang garis)</li>
+                        <li>✅ Tekan Shift sambil klik untuk mode Extend saat Trim aktif</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Offset Section -->
+            <div class="content-section">
+                <h3>📐 3) Latihan Offset</h3>
+                <p style="line-height:1.8; margin-bottom: 15px;">
+                    Perintah <code>OFFSET</code> berfungsi untuk menggandakan objek terpilih pada jarak yang telah ditentukan.
+                    Hasil offset akan sejajar dengan objek asli.
+                </p>
+
+                <div class="info-box">
+                    <strong>🎯 Perbedaan Penting:</strong> Jika objek digambar dengan <strong>Polyline</strong>, hasil offset akan menjadi satu kesatuan. 
+                    Jika digambar dengan <strong>Line</strong>, hasil offset akan menjadi objek terpisah.
+                </div>
+
+                <div class="steps-container">
+                    <!-- Offset dengan Line -->
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong>Persiapan: Buat Objek dengan Line</strong>
+                            <p>Buat beberapa garis menggunakan perintah <code>LINE</code> sebagai objek latihan</p>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/3). latihan offset/bagian line pertama.png" alt="Line Object" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong>Cara Offset dengan Line</strong>
+                            <p>Langkah-langkah:</p>
+                            <ol style="margin-left: 20px; line-height: 2;">
+                                <li>Ketik <code>O</code> lalu tekan Spasi/Enter</li>
+                                <li>Ketik jarak offset yang diinginkan (contoh: <code>2</code>) lalu Spasi</li>
+                                <li>Pilih objek yang akan di-offset (klik garis)</li>
+                                <li>Klik arah offset (dalam atau luar)</li>
+                                <li>Ulangi untuk garis lain atau tekan Enter untuk selesai</li>
+                            </ol>
+                            <div class="command-box">
+                                <code>O</code> → Spasi → <code>2</code> → Spasi → Pilih Objek → Klik Arah
+                            </div>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/3). latihan offset/bagian line kedua.png" alt="Offset Line Step" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <strong>Hasil Offset dengan Line</strong>
+                            <p>Setiap garis hasil offset adalah objek terpisah yang bisa diedit individual</p>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/3). latihan offset/bagian line ketiga.png" alt="Hasil Offset Line" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Offset dengan Polyline -->
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <strong>Persiapan: Buat Objek dengan Polyline</strong>
+                            <p>Buat objek menggunakan perintah <code>PLINE</code> atau <code>PL</code></p>
+                            <p>Polyline membuat garis yang saling terhubung menjadi satu kesatuan objek</p>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/3). latihan offset/bagian polyline awal.png" alt="Polyline Object" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <strong>Hasil Offset dengan Polyline</strong>
+                            <p>Hasil offset tetap menjadi satu kesatuan polyline yang bisa digerakkan sekaligus</p>
+                            <p>Klik salah satu bagian akan memilih seluruh objek polyline</p>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/3). latihan offset/bagian polyline kedua.png" alt="Hasil Offset Polyline" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                            <div class="success-box">
+                                ✅ <strong>Polyline</strong> lebih efisien untuk objek tertutup seperti kotak, karena tetap menjadi satu kesatuan!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comparison-box">
+                    <h4>📊 Perbandingan Line vs Polyline dalam Offset</h4>
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <div class="comparison-title">📏 LINE</div>
+                            <ul>
+                                <li>Setiap segmen adalah objek terpisah</li>
+                                <li>Hasil offset juga terpisah-pisah</li>
+                                <li>Bisa diedit per segmen</li>
+                                <li>Lebih fleksibel tapi kurang efisien</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item highlight">
+                            <div class="comparison-title">📐 POLYLINE</div>
+                            <ul>
+                                <li>Semua segmen adalah satu kesatuan</li>
+                                <li>Hasil offset tetap satu kesatuan</li>
+                                <li>Bisa diatur ketebalan garis</li>
+                                <li>Lebih efisien untuk objek tertutup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h4>💡 Tips Offset</h4>
+                    <ul style="line-height: 1.8;">
+                        <li>✅ Gunakan <strong>Polyline</strong> untuk membuat objek tertutup (kotak, polygon)</li>
+                        <li>✅ Gunakan <strong>Line</strong> untuk garis yang perlu diedit individual</li>
+                        <li>✅ Tekan Enter tanpa angka untuk mengulang jarak offset terakhir</li>
+                        <li>✅ Gunakan perintah <code>PEDIT</code> untuk mengubah Line menjadi Polyline</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hatch Practice Section -->
+            <div class="content-section">
+                <h3>🎨 4) Latihan Mengarsir (HATCH)</h3>
+                <p style="line-height:1.8; margin-bottom: 15px;">
+                    Latihan menggunakan perintah <code>HATCH</code> untuk memberi tekstur atau pattern pada area tertutup.
+                    Ada dua metode: <strong>PICK POINTS</strong> (klik dalam area) atau <strong>SELECT</strong> (pilih boundary).
+                </p>
+
+                <div class="info-box">
+                    <strong>📋 Persiapan:</strong> Pastikan sudah ada objek tertutup (rectangle, circle, polyline tertutup) sebelum menggunakan HATCH.
+                </div>
+
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong>Aktifkan Perintah HATCH</strong>
+                            <p>Ketik <code>H</code> atau <code>HATCH</code> lalu tekan Enter</p>
+                            <p>Atau klik toolbar <strong>Hatch</strong> pada ribbon Home</p>
+                            <div class="command-box">
+                                <code>H</code> → Enter
+                            </div>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/4). latihan mengarsir/langkah awal.png" alt="Hatch Command" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong>Pilih Pattern dan Atur Properties</strong>
+                            <p>Pada jendela Hatch Creation:</p>
+                            <ol style="margin-left: 20px; line-height: 2;">
+                                <li>Klik dropdown <strong>PATTERN</strong> untuk memilih jenis arsiran</li>
+                                <li>Pilih pattern sesuai kebutuhan (ANSI31, SOLID, AR-CONC, dll)</li>
+                                <li>Atur <strong>PROPERTIES</strong>:
+                                    <ul style="margin-top: 10px;">
+                                        <li><strong>Scale:</strong> Ukuran pattern (lebih besar = lebih renggang)</li>
+                                        <li><strong>Angle:</strong> Sudut kemiringan arsiran</li>
+                                        <li><strong>Color:</strong> Warna arsiran</li>
+                                        <li><strong>Transparency:</strong> Tingkat transparansi</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <div class="image-container">
+                                <img src="Assets/5. persiapan menggambar/4). latihan mengarsir/langkah kedua.png" alt="Hatch Properties" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <strong>Pilih Area dengan PICK POINTS</strong>
+                            <p>Klik tombol <strong>Pick Points</strong></p>
+                            <p>Klik di dalam area tertutup yang ingin diarsir</p>
+                            <p>AutoCAD akan otomatis mendeteksi boundary (batas) area tertutup</p>
+                            <div class="success-box">
+                                ✅ Tekan <kbd>Enter</kbd> untuk menerapkan arsiran
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <strong>Alternatif: Gunakan SELECT Objects</strong>
+                            <p>Jika Pick Points tidak bekerja, gunakan <strong>Select Objects</strong></p>
+                            <p>Pilih objek pembatas (garis-garis yang membentuk area tertutup)</p>
+                            <p>AutoCAD akan mengarsir area yang dibatasi objek tersebut</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h4>💡 Tips Latihan Mengarsir</h4>
+                    <ul style="line-height: 1.8;">
+                        <li>✅ <strong>PICK POINTS</strong> lebih cepat untuk area sederhana yang tertutup sempurna</li>
+                        <li>✅ <strong>SELECT</strong> lebih akurat untuk area kompleks atau boundary tidak sempurna</li>
+                        <li>✅ Gunakan layer terpisah untuk hatch agar mudah di-freeze atau di-hide</li>
+                        <li>✅ Sesuaikan <strong>Scale</strong> arsiran agar tidak terlalu rapat atau renggang</li>
+                        <li>✅ Double-click arsiran untuk mengedit properties-nya</li>
+                        <li>✅ Gunakan <strong>HATCHEDIT</strong> (HE) untuk edit arsiran yang sudah ada</li>
+                        <li>✅ Tekan <kbd>Esc</kbd> jika salah pilih area, lalu ulangi</li>
+                    </ul>
+                </div>
+
+                <div class="quick-ref">
+                    <div class="ref-card">
+                        <h4>⚡ Shortcut Hatch</h4>
+                        <ul>
+                            <li><code>H</code> - Buat hatch baru</li>
+                            <li><code>HE</code> - Edit hatch existing</li>
+                            <li>Double-click - Edit hatch</li>
+                        </ul>
+                    </div>
+                    <div class="ref-card">
+                        <h4>🎨 Pattern Populer</h4>
+                        <ul>
+                            <li><strong>ANSI31</strong> - Beton umum</li>
+                            <li><strong>SOLID</strong> - Arsiran penuh</li>
+                            <li><strong>AR-CONC</strong> - Beton arsitektur</li>
+                        </ul>
+                    </div>
+                    <div class="ref-card">
+                        <h4>⚙️ Properties Penting</h4>
+                        <ul>
+                            <li><strong>Scale:</strong> 1-100</li>
+                            <li><strong>Angle:</strong> 0-360°</li>
+                            <li><strong>Color:</strong> ByLayer/Custom</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Section -->
+            <div class="content-section">
+                <h3>📚 Ringkasan Persiapan Menggambar</h3>
+                <div class="summary-grid">
+                    <div class="summary-card">
+                        <div class="summary-icon">📏</div>
+                        <div class="summary-title">LINE (L)</div>
+                        <p>Membuat garis lurus dengan ukuran presisi. Gunakan <code>C</code> untuk menutup.</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">✂️</div>
+                        <div class="summary-title">TRIM (TR)</div>
+                        <p>Memotong garis berpotongan. Enter 2x untuk auto-select semua boundary.</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">📐</div>
+                        <div class="summary-title">OFFSET (O)</div>
+                        <p>Menggandakan objek dengan jarak tertentu. Polyline tetap satu kesatuan.</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">🎨</div>
+                        <div class="summary-title">HATCH (H)</div>
+                        <p>Mengarsir area tertutup. Gunakan Pick Points atau Select Objects.</p>
+                    </div>
+                </div>
+
+                <div class="alert-box" style="background: #d4edda; border-left-color: #28a745;">
+                    <strong>🎯 Latihan Selanjutnya:</strong> Coba kombinasikan keempat perintah ini untuk membuat gambar sederhana seperti denah rumah mini atau detail konstruksi!
+                </div>
+            </div>
+
+            <button class="back-btn" onclick="backToMenu()">← Kembali ke Menu</button>
+        </div>
+
+        <footer>
+            <p>© 2025 Program Pembelajaran AutoCAD | Gambar Teknik Bangunan</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
