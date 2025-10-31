@@ -1257,7 +1257,134 @@
             <h2>5. Persiapan Menggambar</h2>
             
             <div class="alert-box" style="background: #d1ecf1; border-left-color: #0c5460;">
-                <strong>🧭 Tujuan:</strong> Latihan dasar menggambar: Line, Trim, Offset, dan Hatch. Cocok untuk pemula.
+                <strong>🧭 Tujuan:</strong> Memahami Status Bar dan latihan dasar menggambar: Line, Trim, Offset, dan Hatch. Cocok untuk pemula.
+            </div>
+
+            <!-- Status Bar Section -->
+            <div class="content-section">
+                <h3>📊 Status Bar AutoCAD</h3>
+                
+                <div class="overview-image">
+                    <img src="Assets/tambahan materi persiapan menggambar/persiapan menggambar/pertama.png" alt="Status Bar AutoCAD" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                </div>
+
+                <p style="line-height: 1.8; margin-bottom: 15px;">
+                    <strong>Status bar</strong> berada di sebelah kanan bawah tampilan AutoCAD. Status bar menunjukkan status pengaturan gambar saat ini, 
+                    seperti SNAP, GRID, ORTHO, POLAR, dan lain-lain. Fungsi-fungsi ini sangat penting untuk membantu presisi dan kecepatan menggambar.
+                </p>
+
+                <div class="info-box" style="background: #fff3cd; border-left-color: #ffc107;">
+                    <strong>💡 Tips:</strong> Gunakan shortcut keyboard (F3, F8, F9, dll) untuk toggle status bar dengan cepat!
+                </div>
+
+                <!-- Status Bar Functions -->
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Fungsi</th>
+                                <th>Deskripsi</th>
+                                <th>Shortcut</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><strong>MODEL/PAPER</strong></td>
+                                <td>Berpindah antara <strong>Model Space</strong> (area gambar) dan <strong>Paper Space</strong> (layout untuk printing)</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><strong>GRID ON/OFF</strong></td>
+                                <td>Mengaktifkan atau menonaktifkan grid (titik bantu) pada layar untuk memudahkan referensi visual</td>
+                                <td><kbd>F7</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><strong>SNAP ON/OFF</strong></td>
+                                <td>Mengaktifkan/menonaktifkan snap, yaitu fitur mengunci langkah kursor pada interval tertentu untuk presisi</td>
+                                <td><kbd>F9</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><strong>ORTHO</strong></td>
+                                <td>Mengaktifkan/menonaktifkan modus tegak lurus. Saat ON, kursor hanya bergerak horizontal atau vertikal (90°)</td>
+                                <td><kbd>F8</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><strong>POLAR TRACKING</strong></td>
+                                <td>Mengaktifkan/menonaktifkan modus polar, yaitu fitur mengarahkan kursor ke setiap sudut tertentu (30°, 45°, 90°, dll). Klik dropdown untuk mengubah interval sudut</td>
+                                <td><kbd>F10</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><strong>ISOMETRIC DRAFTING</strong></td>
+                                <td>Mengaktifkan/menonaktifkan SNAP ISOPLANE (RIGHT, TOP, LEFT) secara bergantian. Digunakan untuk membantu saat membuat gambar isometrik 2D</td>
+                                <td><kbd>F5</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><strong>OSNAP TRACKING</strong></td>
+                                <td>Mengaktifkan/menonaktifkan AutoTrack, fitur yang membantu mendapatkan arah tertentu dari sebuah OSNAP point</td>
+                                <td><kbd>F11</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><strong>OSNAP</strong></td>
+                                <td>Mengaktifkan/menonaktifkan Object Snap (modus penguncian koordinat objek seperti Endpoint, Midpoint, Center, dll). Klik dropdown untuk mengatur jenis OSNAP yang aktif</td>
+                                <td><kbd>F3</kbd></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Polar Tracking Image -->
+                <div class="content-section">
+                    <h4>🔹 Polar Tracking</h4>
+                    <div class="image-container">
+                        <img src="Assets/tambahan materi persiapan menggambar/persiapan menggambar/no 5 polar tracking.png" alt="Polar Tracking" style="width: 100%; max-width: 800px; border-radius: 8px; margin-top: 10px;">
+                    </div>
+                    <p style="line-height: 1.8; margin-top: 15px;">
+                        <strong>Polar Tracking</strong> membantu Anda menggambar garis dengan sudut tertentu (misalnya 30°, 45°, 90°). 
+                        Klik panah dropdown pada tombol Polar Tracking di status bar untuk mengubah interval sudut sesuai kebutuhan.
+                    </p>
+                </div>
+
+                <!-- OSNAP Image -->
+                <div class="content-section">
+                    <h4>🔹 Object Snap (OSNAP)</h4>
+                    <div class="image-container">
+                        <img src="Assets/tambahan materi persiapan menggambar/persiapan menggambar/no 8 osnap.png" alt="OSNAP Settings" style="width: 100%; max-width: 800px; border-radius: 8px; margin-top: 10px;">
+                    </div>
+                    <p style="line-height: 1.8; margin-top: 15px;">
+                        <strong>OSNAP (Object Snap)</strong> sangat penting untuk presisi. Aktifkan jenis snap yang sering digunakan:
+                    </p>
+                    <ul style="line-height: 1.8; margin-left: 20px;">
+                        <li><strong>Endpoint:</strong> Snap ke ujung garis</li>
+                        <li><strong>Midpoint:</strong> Snap ke titik tengah garis</li>
+                        <li><strong>Center:</strong> Snap ke pusat lingkaran/arc</li>
+                        <li><strong>Intersection:</strong> Snap ke titik perpotongan dua garis</li>
+                        <li><strong>Perpendicular:</strong> Snap tegak lurus dengan garis</li>
+                        <li><strong>Nearest:</strong> Snap ke titik terdekat pada objek</li>
+                    </ul>
+                    <div class="alert-box" style="background: #d4edda; border-left-color: #28a745; margin-top: 15px;">
+                        <strong>✅ Rekomendasi:</strong> Aktifkan minimal <strong>Endpoint</strong>, <strong>Midpoint</strong>, <strong>Center</strong>, dan <strong>Intersection</strong> untuk menggambar dengan presisi tinggi!
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h4>💡 Tips Menggunakan Status Bar</h4>
+                    <ul style="line-height: 1.8;">
+                        <li>✅ <strong>F3</strong> untuk toggle OSNAP dengan cepat</li>
+                        <li>✅ <strong>F8</strong> untuk toggle ORTHO saat perlu garis horizontal/vertikal sempurna</li>
+                        <li>✅ <strong>F10</strong> untuk Polar Tracking saat perlu sudut presisi (30°, 45°, dll)</li>
+                        <li>✅ Kombinasikan ORTHO dan OSNAP untuk menggambar detail konstruksi yang akurat</li>
+                        <li>✅ Matikan SNAP (F9) jika kursor terasa "loncat-loncat" saat menggambar bebas</li>
+                    </ul>
+                </div>
             </div>
 
             <!-- Lines Section -->
@@ -1642,10 +1769,289 @@
                 </div>
             </div>
 
+            <!-- Mirror Section -->
+            <div class="content-section">
+                <h3>🪞 5) Mirror (Mencerminkan Objek)</h3>
+                <p style="line-height:1.8; margin-bottom: 15px;">
+                    Perintah <code>MIRROR</code> berfungsi untuk mencerminkan atau membalik objek secara simetris terhadap garis cermin.
+                    Sangat berguna untuk membuat objek yang simetris seperti pintu, jendela, atau denah bangunan.
+                </p>
+
+                <div class="info-box">
+                    <strong>💡 Kegunaan:</strong> Mirror sangat efisien untuk membuat objek simetris. Gambar satu sisi saja, lalu mirror untuk mendapatkan sisi lainnya!
+                </div>
+
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong>Pilih Objek dan Aktifkan Mirror</strong>
+                            <p>Pilih objek yang akan di-mirror (klik objek atau gunakan window selection)</p>
+                            <p>Ketik <code>MI</code> lalu tekan Spasi atau Enter</p>
+                            <div class="command-box">
+                                Select Objects → <code>MI</code> → Spasi
+                            </div>
+                            <div class="image-container">
+                                <img src="Assets/tambahan materi persiapan menggambar/mirror/langkah 1.png" alt="Mirror Step 1" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong>Tentukan Garis Cermin (Mirror Line)</strong>
+                            <p>Klik titik pertama garis cermin (sebagai sumbu cermin)</p>
+                            <p>Arahkan kursor ke arah yang diinginkan untuk menentukan arah garis cermin</p>
+                            <p>Klik titik kedua untuk menentukan garis cermin</p>
+                            <div class="alert-box" style="background: #fff3cd; border-left-color: #ffc107;">
+                                <strong>📌 Tips:</strong> Gunakan ORTHO (F8) atau Polar Tracking (F10) untuk membuat garis cermin horizontal/vertikal sempurna!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <strong>Pilih: Hapus atau Pertahankan Objek Asli</strong>
+                            <p>Setelah menentukan garis cermin, akan muncul prompt:</p>
+                            <div class="command-box">
+                                <strong>Erase source objects? [Yes/No] &lt;N&gt;:</strong>
+                            </div>
+                            <ul style="line-height: 1.8; margin-top: 10px;">
+                                <li><strong>Ketik <code>Y</code> lalu Enter:</strong> Objek asli akan terhapus (hanya hasil mirror yang tersisa)</li>
+                                <li><strong>Ketik <code>N</code> atau langsung Enter:</strong> Objek asli tetap ada (default)</li>
+                            </ul>
+                            <div class="image-container">
+                                <img src="Assets/tambahan materi persiapan menggambar/mirror/langkah 2.png" alt="Mirror Result" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                            <div class="success-box">
+                                ✅ Objek berhasil di-mirror! Gunakan untuk membuat desain simetris dengan cepat.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h4>💡 Tips Mirror</h4>
+                    <ul style="line-height: 1.8;">
+                        <li>✅ Gunakan ORTHO (F8) untuk mirror horizontal/vertikal sempurna</li>
+                        <li>✅ Pilih <strong>No</strong> untuk tetap mempertahankan objek asli (lebih aman)</li>
+                        <li>✅ Mirror berguna untuk denah rumah, pintu lipat, jendela simetris</li>
+                        <li>✅ Kombinasikan dengan COPY untuk membuat pola berulang dan simetris</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Fillet Section -->
+            <div class="content-section">
+                <h3>🔄 6) Fillet (Menghubungkan Objek)</h3>
+                <p style="line-height:1.8; margin-bottom: 15px;">
+                    Perintah <code>FILLET</code> berfungsi untuk menghubungkan dua objek (garis), baik dengan <strong>busur (lengkung)</strong> 
+                    ataupun <strong>garis lurus (lancip)</strong>, tergantung nilai radius yang ditentukan.
+                </p>
+
+                <div class="info-box">
+                    <strong>🎯 Penting:</strong> Nilai Radius (R) menentukan hasil:<br>
+                    • <strong>R = 0</strong> → Menghubungkan dengan garis lurus (lancip/sudut tajam)<br>
+                    • <strong>R &gt; 0</strong> → Menghubungkan dengan busur/lengkung
+                </div>
+
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong>Aktifkan Fillet dan Atur Radius</strong>
+                            <p>Ketik <code>F</code> lalu Spasi untuk mengaktifkan perintah Fillet</p>
+                            <p>Ketik <code>R</code> lalu Spasi untuk mengatur Radius</p>
+                            <p>Masukkan nilai radius yang diinginkan, lalu Spasi:</p>
+                            <ul style="line-height: 1.8; margin-top: 10px;">
+                                <li><strong>Ketik <code>0</code>:</strong> Untuk sambungan lancip/sudut tajam</li>
+                                <li><strong>Ketik angka &gt; 0</strong> (misalnya <code>10</code>, <code>20</code>, <code>50</code>): Untuk sambungan lengkung</li>
+                            </ul>
+                            <div class="command-box">
+                                <code>F</code> → Spasi → <code>R</code> → Spasi → <code>0</code> (atau angka lain) → Spasi
+                            </div>
+                            <div class="image-container">
+                                <img src="Assets/tambahan materi persiapan menggambar/fillet/langkah 1.png" alt="Fillet Command" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong>Pilih Dua Objek yang Akan Dihubungkan</strong>
+                            <p>Klik objek pertama (garis/edge pertama)</p>
+                            <p>Klik objek kedua (garis/edge kedua)</p>
+                            <p>AutoCAD akan otomatis menghubungkan kedua objek sesuai radius yang ditentukan</p>
+                            <div class="image-container">
+                                <img src="Assets/tambahan materi persiapan menggambar/fillet/langkah 2.png" alt="Fillet Result" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                            <p style="margin-top: 15px;"><strong>Keterangan gambar:</strong></p>
+                            <ul style="line-height: 1.8;">
+                                <li><strong>Sebelah kiri (R=0):</strong> Sambungan lancip/sudut tajam</li>
+                                <li><strong>Sebelah kanan (R&gt;0):</strong> Sambungan lengkung/busur</li>
+                            </ul>
+                            <div class="success-box">
+                                ✅ Objek berhasil dihubungkan! Gunakan R=0 untuk sudut tajam, R&gt;0 untuk lengkungan halus.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h4>💡 Tips Fillet</h4>
+                    <ul style="line-height: 1.8;">
+                        <li>✅ <strong>R=0</strong> digunakan untuk membersihkan sudut atau menghubungkan dua garis lancip</li>
+                        <li>✅ <strong>R&gt;0</strong> digunakan untuk membuat sudut lengkung/rounded corners</li>
+                        <li>✅ Nilai radius bisa diubah-ubah sesuai kebutuhan (coba berbagai nilai)</li>
+                        <li>✅ Fillet berguna untuk detail kusen, furniture, dan elemen arsitektur lainnya</li>
+                        <li>✅ Gunakan Fillet pada polyline untuk membulatkan semua sudut sekaligus</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Chamfer Section -->
+            <div class="content-section">
+                <h3>📐 7) Chamfer (Menghubungkan dengan Garis Bersudut)</h3>
+                <p style="line-height:1.8; margin-bottom: 15px;">
+                    Perintah <code>CHAMFER</code> berfungsi untuk menghubungkan dua garis dengan garis bersudut (membuat sudut miring/terpotong).
+                    Berguna untuk membuat detail potongan atau sudut-sudut arsitektur.
+                </p>
+
+                <div class="info-box">
+                    <strong>🔹 Perbedaan dengan Fillet:</strong><br>
+                    • <strong>Fillet:</strong> Menghubungkan dengan lengkungan (busur)<br>
+                    • <strong>Chamfer:</strong> Menghubungkan dengan garis miring (sudut terpotong)
+                </div>
+
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong>Persiapan: Buat Dua Garis yang Akan Disambung</strong>
+                            <p>Pastikan Anda sudah memiliki dua garis yang akan dihubungkan dengan chamfer</p>
+                            <div class="image-container">
+                                <img src="Assets/tambahan materi persiapan menggambar/chamfer/langkah 1.jpg" alt="Chamfer Preparation" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong>Aktifkan Chamfer dan Pilih Objek</strong>
+                            <p>Ketik <code>CHA</code> lalu tekan Spasi untuk mengaktifkan perintah Chamfer</p>
+                            <p>Pilih objek pertama (klik garis pertama)</p>
+                            <p>Pilih objek kedua (klik garis kedua)</p>
+                            <div class="command-box">
+                                <code>CHA</code> → Spasi → Pilih Garis 1 → Pilih Garis 2
+                            </div>
+                            <div class="image-container">
+                                <img src="Assets/tambahan materi persiapan menggambar/chamfer/langkah 2.png" alt="Chamfer Process" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                            <div class="alert-box" style="background: #fff3cd; border-left-color: #ffc107;">
+                                <strong>⚙️ Pengaturan Lanjutan:</strong> Gunakan opsi <code>D</code> (Distance) setelah CHA untuk mengatur jarak potongan pada setiap sisi.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <strong>Hasil Akhir Chamfer</strong>
+                            <p>Dua garis akan terhubung dengan garis miring (sudut terpotong)</p>
+                            <div class="image-container">
+                                <img src="Assets/tambahan materi persiapan menggambar/chamfer/langkah 3.png" alt="Chamfer Result" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                            <div class="success-box">
+                                ✅ Chamfer berhasil dibuat! Sudut kini memiliki potongan miring yang rapi.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h4>💡 Tips Chamfer</h4>
+                    <ul style="line-height: 1.8;">
+                        <li>✅ Gunakan Chamfer untuk membuat detail potongan pada kusen, furniture, dan komponen bangunan</li>
+                        <li>✅ Atur distance dengan opsi <code>D</code> jika ingin jarak potongan yang sama pada kedua sisi</li>
+                        <li>✅ Chamfer lebih cocok untuk desain industrial/modern dibanding Fillet yang lebih halus</li>
+                        <li>✅ Bisa digunakan pada 3D solid untuk membuat edge bevel</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Extend Section -->
+            <div class="content-section">
+                <h3>↗️ 8) Extend (Memperpanjang Objek)</h3>
+                <p style="line-height:1.8; margin-bottom: 15px;">
+                    Perintah <code>EXTEND</code> berfungsi untuk memperpanjang objek (garis, arc) sampai batas tertentu (boundary).
+                    Merupakan kebalikan dari perintah TRIM.
+                </p>
+
+                <div class="info-box">
+                    <strong>🔄 Hubungan dengan TRIM:</strong><br>
+                    • <strong>TRIM (TR):</strong> Memotong/memendekkan garis<br>
+                    • <strong>EXTEND (EX):</strong> Memperpanjang garis sampai boundary tertentu<br>
+                    <em>Tip: Tekan Shift saat menggunakan TRIM untuk mode Extend, dan sebaliknya!</em>
+                </div>
+
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong>Persiapan: Pastikan Ada Boundary</strong>
+                            <p>Pastikan ada garis/objek yang akan dijadikan batas (boundary) untuk perpanjangan</p>
+                            <p>Buat garis yang akan diperpanjang (garis yang lebih pendek dari boundary)</p>
+                            <div class="image-container">
+                                <img src="Assets/tambahan materi persiapan menggambar/extend/langkah 1.png" alt="Extend Preparation" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong>Aktifkan Extend dan Pilih Objek</strong>
+                            <p>Ketik <code>EX</code> lalu tekan Spasi <strong>2 kali</strong> (untuk memilih semua objek sebagai boundary)</p>
+                            <p>Klik pada garis yang akan diperpanjang</p>
+                            <p>Garis akan otomatis memanjang hingga menyentuh boundary terdekat</p>
+                            <div class="command-box">
+                                <code>EX</code> → Spasi → Spasi → Klik Garis yang Akan Diperpanjang
+                            </div>
+                            <div class="image-container">
+                                <img src="Assets/tambahan materi persiapan menggambar/extend/langkah 2.png" alt="Extend Result" style="width:100%; max-width:700px; border-radius:8px; margin-top:10px;">
+                            </div>
+                            <div class="success-box">
+                                ✅ Garis berhasil diperpanjang! Tekan <kbd>Enter</kbd> atau <kbd>Esc</kbd> untuk mengakhiri perintah Extend.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h4>💡 Tips Extend</h4>
+                    <ul style="line-height: 1.8;">
+                        <li>✅ Tekan Spasi 2x setelah EX untuk auto-select semua objek sebagai boundary</li>
+                        <li>✅ Klik ujung garis yang <strong>dekat dengan boundary</strong> untuk hasil yang tepat</li>
+                        <li>✅ Gunakan bersama TRIM untuk merapikan gambar dengan cepat</li>
+                        <li>✅ Tekan <kbd>Shift</kbd> saat TRIM aktif untuk langsung mode Extend (tanpa keluar perintah)</li>
+                        <li>✅ Extend juga bisa digunakan untuk arc (busur) dan polyline</li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- Summary Section -->
             <div class="content-section">
                 <h3>📚 Ringkasan Persiapan Menggambar</h3>
                 <div class="summary-grid">
+                    <div class="summary-card">
+                        <div class="summary-icon">📊</div>
+                        <div class="summary-title">STATUS BAR</div>
+                        <p>Kendalikan OSNAP, ORTHO, POLAR, dan tools presisi lainnya dengan shortcut keyboard.</p>
+                    </div>
                     <div class="summary-card">
                         <div class="summary-icon">📏</div>
                         <div class="summary-title">LINE (L)</div>
@@ -1666,10 +2072,30 @@
                         <div class="summary-title">HATCH (H)</div>
                         <p>Mengarsir area tertutup. Gunakan Pick Points atau Select Objects.</p>
                     </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">🪞</div>
+                        <div class="summary-title">MIRROR (MI)</div>
+                        <p>Mencerminkan objek secara simetris. Pilih Yes/No untuk hapus objek asli.</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">🔄</div>
+                        <div class="summary-title">FILLET (F)</div>
+                        <p>Menghubungkan dua garis dengan lengkungan (R&gt;0) atau lancip (R=0).</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">📐</div>
+                        <div class="summary-title">CHAMFER (CHA)</div>
+                        <p>Menghubungkan dua garis dengan garis miring/sudut terpotong.</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">↗️</div>
+                        <div class="summary-title">EXTEND (EX)</div>
+                        <p>Memperpanjang garis hingga boundary. Kebalikan dari TRIM.</p>
+                    </div>
                 </div>
 
                 <div class="alert-box" style="background: #d4edda; border-left-color: #28a745;">
-                    <strong>🎯 Latihan Selanjutnya:</strong> Coba kombinasikan keempat perintah ini untuk membuat gambar sederhana seperti denah rumah mini atau detail konstruksi!
+                    <strong>🎯 Latihan Selanjutnya:</strong> Kombinasikan semua perintah ini untuk membuat gambar detail seperti kusen pintu/jendela, denah rumah, atau detail konstruksi lainnya!
                 </div>
             </div>
 

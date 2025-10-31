@@ -925,7 +925,7 @@ kbd {
 /* Summary Cards */
 .summary-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     margin: 20px 0;
 }
@@ -937,6 +937,10 @@ kbd {
     border: 2px solid #e9ecef;
     text-align: center;
     transition: all 0.3s ease;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .summary-card:hover {
@@ -949,10 +953,11 @@ kbd {
 .summary-icon {
     font-size: 2.5em;
     margin-bottom: 10px;
+    display: block;
 }
 
 .summary-title {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
     color: #2c3e50;
     margin-bottom: 10px;
@@ -973,6 +978,21 @@ kbd {
     font-size: 0.9em;
 }
 
+/* Responsive untuk layar besar - 3 kolom untuk summary */
+@media (min-width: 1200px) {
+    .summary-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Responsive untuk tablet landscape - 2 kolom */
+@media (min-width: 769px) and (max-width: 1199px) {
+    .summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive untuk mobile dan tablet portrait */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.8em;
