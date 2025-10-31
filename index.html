@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✏️ Program Pembelajaran AutoCAD</title>
+    <title>Program Pembelajaran AutoCAD</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1> Program Pembelajaran AutoCAD</h1>
+            <h1>🎓 Program Pembelajaran AutoCAD</h1>
             <p>Panduan Lengkap Gambar Teknik Bangunan</p>
         </header>
 
@@ -43,6 +43,11 @@
                 <div class="number">5</div>
                 <h3>Persiapan Menggambar</h3>
                 <p>Checklist dan langkah-langkah sebelum mulai menggambar</p>
+            </div>
+            <div class="menu-item" onclick="showContent(6)">
+                <div class="number">6</div>
+                <h3>Mini Quiz</h3>
+                <p>Uji pengetahuan Anda: 10 soal (2 soal per subbab)</p>
             </div>
         </div>
 
@@ -1669,6 +1674,326 @@
             </div>
 
             <button class="back-btn" onclick="backToMenu()">← Kembali ke Menu</button>
+        </div>
+
+        <!-- Content Section 6: Mini Quiz -->
+        <div id="content6" class="content">
+            <h2>🎯 Mini Quiz AutoCAD</h2>
+            <p class="quiz-intro">Uji pengetahuan Anda dengan 10 soal pilihan ganda!</p>
+
+            <!-- Progress Bar -->
+            <div class="quiz-progress-container">
+                <div class="quiz-progress-bar" id="quizProgressBar"></div>
+                <span class="quiz-progress-text" id="quizProgressText">0/10 Soal Terjawab</span>
+            </div>
+
+            <div class="quiz-container">
+                <form id="quizForm">
+                    <!-- Question 1 -->
+                    <div class="quiz-card" data-question="1">
+                        <div class="question-number">Soal 1</div>
+                        <p class="question-text">Perintah singkat untuk membuat garis di command line adalah...</p>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="q1" value="L">
+                                <span class="option-content">
+                                    <span class="option-letter">A</span>
+                                    <span class="option-text">L</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q1" value="C">
+                                <span class="option-content">
+                                    <span class="option-letter">B</span>
+                                    <span class="option-text">C</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q1" value="H">
+                                <span class="option-content">
+                                    <span class="option-letter">C</span>
+                                    <span class="option-text">H</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="quiz-card" data-question="2">
+                        <div class="question-number">Soal 2</div>
+                        <p class="question-text">Perintah untuk menghapus objek adalah...</p>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="q2" value="E">
+                                <span class="option-content">
+                                    <span class="option-letter">A</span>
+                                    <span class="option-text">E (ERASE)</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q2" value="O">
+                                <span class="option-content">
+                                    <span class="option-letter">B</span>
+                                    <span class="option-text">O (OFFSET)</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q2" value="TR">
+                                <span class="option-content">
+                                    <span class="option-letter">C</span>
+                                    <span class="option-text">TR (TRIM)</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="quiz-card" data-question="3">
+                        <div class="question-number">Soal 3</div>
+                        <p class="question-text">Perintah untuk membuka Drawing Units adalah...</p>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="q3" value="units">
+                                <span class="option-content">
+                                    <span class="option-letter">A</span>
+                                    <span class="option-text">units</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q3" value="dimstyle">
+                                <span class="option-content">
+                                    <span class="option-letter">B</span>
+                                    <span class="option-text">dimstyle</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q3" value="la">
+                                <span class="option-content">
+                                    <span class="option-letter">C</span>
+                                    <span class="option-text">la</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="quiz-card" data-question="4">
+                        <div class="question-number">Soal 4</div>
+                        <p class="question-text">Untuk membuat layer baru, perintah singkatnya adalah...</p>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="q4" value="LA">
+                                <span class="option-content">
+                                    <span class="option-letter">A</span>
+                                    <span class="option-text">LA</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q4" value="L">
+                                <span class="option-content">
+                                    <span class="option-letter">B</span>
+                                    <span class="option-text">L</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q4" value="O">
+                                <span class="option-content">
+                                    <span class="option-letter">C</span>
+                                    <span class="option-text">O</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="quiz-card" data-question="5">
+                        <div class="question-number">Soal 5</div>
+                        <p class="question-text">Format input rectangle untuk kertas A4 adalah...</p>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="q5" value="@210,297">
+                                <span class="option-content">
+                                    <span class="option-letter">A</span>
+                                    <span class="option-text">@210,297</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q5" value="@297,420">
+                                <span class="option-content">
+                                    <span class="option-letter">B</span>
+                                    <span class="option-text">@297,420</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q5" value="@420,594">
+                                <span class="option-content">
+                                    <span class="option-letter">C</span>
+                                    <span class="option-text">@420,594</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="quiz-card" data-question="6">
+                        <div class="question-number">Soal 6</div>
+                        <p class="question-text">Perintah untuk memecah objek menjadi bagian adalah...</p>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="q6" value="X">
+                                <span class="option-content">
+                                    <span class="option-letter">A</span>
+                                    <span class="option-text">X (EXPLODE)</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q6" value="TR">
+                                <span class="option-content">
+                                    <span class="option-letter">B</span>
+                                    <span class="option-text">TR</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q6" value="H">
+                                <span class="option-content">
+                                    <span class="option-letter">C</span>
+                                    <span class="option-text">H</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="quiz-card" data-question="7">
+                        <div class="question-number">Soal 7</div>
+                        <p class="question-text">Pattern AutoCAD yang biasa dipakai untuk beton arsitektur adalah...</p>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="q7" value="AR-CONC">
+                                <span class="option-content">
+                                    <span class="option-letter">A</span>
+                                    <span class="option-text">AR-CONC</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q7" value="EARTH">
+                                <span class="option-content">
+                                    <span class="option-letter">B</span>
+                                    <span class="option-text">EARTH</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q7" value="GRAVEL">
+                                <span class="option-content">
+                                    <span class="option-letter">C</span>
+                                    <span class="option-text">GRAVEL</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 8 -->
+                    <div class="quiz-card" data-question="8">
+                        <div class="question-number">Soal 8</div>
+                        <p class="question-text">Perintah untuk membuat arsiran baru adalah...</p>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="q8" value="H">
+                                <span class="option-content">
+                                    <span class="option-letter">A</span>
+                                    <span class="option-text">H</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q8" value="HE">
+                                <span class="option-content">
+                                    <span class="option-letter">B</span>
+                                    <span class="option-text">HE</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q8" value="B">
+                                <span class="option-content">
+                                    <span class="option-letter">C</span>
+                                    <span class="option-text">BOUNDARY</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 9 -->
+                    <div class="quiz-card" data-question="9">
+                        <div class="question-number">Soal 9</div>
+                        <p class="question-text">Perintah untuk mengulang jarak offset terakhir adalah...</p>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="q9" value="Enter">
+                                <span class="option-content">
+                                    <span class="option-letter">A</span>
+                                    <span class="option-text">Tekan Enter tanpa angka</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q9" value="0">
+                                <span class="option-content">
+                                    <span class="option-letter">B</span>
+                                    <span class="option-text">0</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q9" value="R">
+                                <span class="option-content">
+                                    <span class="option-letter">C</span>
+                                    <span class="option-text">R</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 10 -->
+                    <div class="quiz-card" data-question="10">
+                        <div class="question-number">Soal 10</div>
+                        <p class="question-text">Tombol fungsi untuk mengaktifkan OSNAP adalah...</p>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="q10" value="F3">
+                                <span class="option-content">
+                                    <span class="option-letter">A</span>
+                                    <span class="option-text">F3</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q10" value="F8">
+                                <span class="option-content">
+                                    <span class="option-letter">B</span>
+                                    <span class="option-text">F8</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q10" value="F7">
+                                <span class="option-content">
+                                    <span class="option-letter">C</span>
+                                    <span class="option-text">F7</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-actions">
+                        <button type="button" class="btn-secondary" onclick="backToMenu()">
+                            <span>← Kembali</span>
+                        </button>
+                        <button type="button" class="btn-primary" onclick="gradeQuiz()">
+                            <span>✓ Submit Quiz</span>
+                        </button>
+                        <button type="button" class="btn-reset" onclick="resetQuiz()">
+                            <span>↻ Reset</span>
+                        </button>
+                    </div>
+                </form>
+
+                <div id="quizResult"></div>
+            </div>
         </div>
 
         <footer>
