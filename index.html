@@ -44,10 +44,17 @@
                 <h3>Persiapan Menggambar</h3>
                 <p>Checklist dan langkah-langkah sebelum mulai menggambar</p>
             </div>
+            
             <div class="menu-item" onclick="showContent(6)">
                 <div class="number">6</div>
+                <h3>Kusen Pintu & Jendela</h3>
+                <p>Cara membuat kusen pintu dan jendela untuk denah</p>
+            </div>
+            
+            <div class="menu-item quiz-item" onclick="showContent(7)">
+                <div class="number">📝</div>
                 <h3>Mini Quiz</h3>
-                <p>Uji pengetahuan Anda: 10 soal (2 soal per subbab)</p>
+                <p>Uji pengetahuan Anda: 10 soal pilihan ganda</p>
             </div>
         </div>
 
@@ -1337,8 +1344,71 @@
                                 <td>Mengaktifkan/menonaktifkan Object Snap (modus penguncian koordinat objek seperti Endpoint, Midpoint, Center, dll). Klik dropdown untuk mengatur jenis OSNAP yang aktif</td>
                                 <td><kbd>F3</kbd></td>
                             </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><strong>ANNOTATION SETTING</strong></td>
+                                <td>Mengaktifkan/menonaktifkan annotative. Fitur ini mengatur skala otomatis untuk teks, dimensi, dan simbol agar sesuai dengan viewport</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><strong>WORKSPACE SETTING</strong></td>
+                                <td>Tombol untuk memilih workspace (ruang kerja yang mengelola dan menyimpan susunan menu yang digunakan untuk bekerja). Misalnya: Drafting & Annotation, 3D Modeling, dll</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td><strong>ANNOTATION MONITOR</strong></td>
+                                <td>Mengaktifkan/menonaktifkan monitoring terhadap annotation object. Saat ON, AutoCAD akan menandai semua annotative objek non-asosiatif dengan tanda seru kuning</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td><strong>ISOLATE OBJECT</strong></td>
+                                <td>Menyembunyikan atau menampilkan objek-objek tertentu pada layar. Berguna untuk fokus pada objek spesifik tanpa gangguan visual</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td><strong>CLEAR SCREEN</strong></td>
+                                <td>Membersihkan layar dari Ribbon (menu panel), toolbar, dan palettes untuk area kerja lebih luas. QAT, Command Line, dan Status Bar tetap ditampilkan</td>
+                                <td><kbd>Ctrl+0</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td><strong>CUSTOMIZATION</strong></td>
+                                <td>Mengontrol tombol-tombol mana saja yang ditampilkan dalam Status Bar. Bisa menambah/mengurangi tombol sesuai kebutuhan</td>
+                                <td>-</td>
+                            </tr>
                         </tbody>
                     </table>
+                </div>
+
+                <!-- Workspace Setting Image -->
+                <div class="content-section">
+                    <h4>🔹 Workspace Setting</h4>
+                    <div class="image-container">
+                        <img src="Assets/tambahan materi persiapan menggambar/persiapan menggambar/no 10. WORKSPACE SETTING.png" alt="Workspace Setting" style="width: 100%; max-width: 800px; border-radius: 8px; margin-top: 10px;">
+                    </div>
+                    <p style="line-height: 1.8; margin-top: 15px;">
+                        <strong>Workspace Setting</strong> memungkinkan Anda beralih antar workspace yang sudah dikonfigurasi sebelumnya. 
+                        Setiap workspace memiliki susunan toolbar dan panel yang berbeda sesuai jenis pekerjaan (2D drafting, 3D modeling, dll).
+                    </p>
+                </div>
+
+                <!-- Customization Image -->
+                <div class="content-section">
+                    <h4>🔹 Customization</h4>
+                    <div class="image-container">
+                        <img src="Assets/tambahan materi persiapan menggambar/persiapan menggambar/no 14. CUSTOMIZATION.png" alt="Customization Status Bar" style="width: 100%; max-width: 800px; border-radius: 8px; margin-top: 10px;">
+                    </div>
+                    <p style="line-height: 1.8; margin-top: 15px;">
+                        <strong>Customization</strong> di Status Bar memungkinkan Anda menyesuaikan tombol mana yang ingin ditampilkan atau disembunyikan. 
+                        Klik tombol customization (ikon tiga garis horizontal) di ujung kanan status bar, lalu centang/hilangkan centang tombol sesuai kebutuhan.
+                    </p>
+                    <div class="info-box" style="background: #fff3cd; border-left-color: #ffc107; margin-top: 15px;">
+                        <strong>💡 Tips:</strong> Aktifkan hanya tombol yang sering Anda gunakan untuk menjaga status bar tetap rapi dan tidak terlalu penuh!
+                    </div>
                 </div>
 
                 <!-- Polar Tracking Image -->
@@ -2102,8 +2172,332 @@
             <button class="back-btn" onclick="backToMenu()">← Kembali ke Menu</button>
         </div>
 
-        <!-- Content Section 6: Mini Quiz -->
+        <!-- Content Section 6: Cara Membuat Kusen Pintu dan Jendela -->
         <div id="content6" class="content">
+            <h2>🚪 Cara Membuat Kusen Pintu dan Jendela untuk Denah</h2>
+            <p class="intro-text">Pelajari cara membuat kusen pintu dan jendela yang sering digunakan dalam gambar denah arsitektur.</p>
+
+            <!-- Kusen Pintu Section -->
+            <div class="content-section">
+                <h3>🚪 Kusen Pintu</h3>
+                <p style="margin-bottom: 20px;">Berikut adalah langkah-langkah membuat kusen pintu untuk denah:</p>
+
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Membuat Frame Kusen</h4>
+                        <p><strong>Perintah:</strong> <code>PL</code> (Polyline)</p>
+                        <ol style="margin-top: 10px; line-height: 1.8;">
+                            <li>Masukkan perintah <code>PL</code> di command line lalu tekan <kbd>Enter</kbd></li>
+                            <li>Sebagai <strong>start point</strong>, letakkan titik pertama di sembarang tempat</li>
+                            <li>Masukkan ukuran gambar sesuai dengan gambar di bawah:</li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen pintu/pertama.png" alt="Frame Kusen Pintu" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Membuat Daun Pintu</h4>
+                        <p><strong>Perintah:</strong> <code>REC</code> (Rectangle)</p>
+                        <ol style="margin-top: 10px; line-height: 1.8;">
+                            <li>Masukkan perintah <code>REC</code> di command line lalu <kbd>Enter</kbd></li>
+                            <li>Klik bagian pojok sebagai titik pertama</li>
+                            <li>Masukkan <strong>Relative Coordinate</strong> <code>@800,30</code> lalu <kbd>Enter</kbd></li>
+                            <li>Sehingga terbentuk geometri seperti di bawah ini:</li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen pintu/kedua.png" alt="Daun Pintu" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Mirror Kusen</h4>
+                        <p><strong>Perintah:</strong> <code>MI</code> (Mirror)</p>
+                        <ol style="margin-top: 10px; line-height: 1.8;">
+                            <li>Select objek balok kusen</li>
+                            <li>Ketik <code>MI</code> lalu <kbd>Enter</kbd></li>
+                            <li>Klik <strong>Midpoint</strong> pada bagian bawah sebagai awal garis cermin</li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen pintu/ketiga.png" alt="Mirror Kusen" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Rotate Daun Pintu</h4>
+                        <p><strong>Perintah:</strong> <code>RO</code> (Rotate)</p>
+                        <ol style="margin-top: 10px; line-height: 1.8;">
+                            <li>Ketik <code>RO</code> lalu <kbd>Enter</kbd></li>
+                            <li><strong>Select objek</strong> pada bagian yang terpanjang (daun pintu)</li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen pintu/keempat.png" alt="Select Daun Pintu" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                        <ol start="3" style="margin-top: 10px; line-height: 1.8;">
+                            <li>Tekan <kbd>Enter</kbd> satu kali</li>
+                            <li>Letakkan <strong>titik poros</strong> pada sudut bagian atas sponing kusen</li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen pintu/kelima.png" alt="Titik Poros" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                        <ol start="5" style="margin-top: 10px; line-height: 1.8;">
+                            <li>Putar ke atas agar membentuk sudut <strong>90°</strong> seperti gambar:</li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen pintu/keenam.png" alt="Rotate 90 Derajat" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Membuat Arc (Busur Bukaan)</h4>
+                        <p><strong>Perintah:</strong> <code>A</code> (Arc)</p>
+                        <ol style="margin-top: 10px; line-height: 1.8;">
+                            <li>Masukkan perintah <code>A</code> lalu <kbd>Enter</kbd></li>
+                            <li>Letakkan pada <strong>titik pertama</strong> dari busur yang akan dibuat</li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen pintu/ketujuh.png" alt="Titik Awal Arc" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                        <ol start="3" style="margin-top: 10px; line-height: 1.8;">
+                            <li>Pilih <strong>END</strong> untuk menentukan titik akhir busur</li>
+                            <li>Busur memiliki <strong>3 titik</strong>: Awal, Tengah, dan Akhir lalu <kbd>Enter</kbd></li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen pintu/kedelapan.png" alt="Arc Selesai" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                        <div class="alert-box" style="background: #d4edda; border-left-color: #28a745; margin-top: 15px;">
+                            <strong>✅ Selesai!</strong> Kusen pintu untuk denah sudah jadi.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kusen Jendela Section -->
+            <div class="content-section">
+                <h3>🪟 Kusen Jendela</h3>
+                <p style="margin-bottom: 20px;">Berikut adalah langkah-langkah membuat kusen jendela untuk denah:</p>
+
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Membuat Frame Kusen</h4>
+                        <p><strong>Perintah:</strong> <code>PL</code> (Polyline)</p>
+                        <ol style="margin-top: 10px; line-height: 1.8;">
+                            <li>Buat kusen menggunakan perintah <code>PL</code> di command line</li>
+                            <li>Gunakan ukuran yang sama seperti kusen pintu sebelumnya</li>
+                            <li>Tekan <kbd>Enter</kbd> untuk selesai</li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen jendela/pertama.png" alt="Frame Kusen Jendela" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Membuat Garis Tengah</h4>
+                        <p><strong>Perintah:</strong> <code>L</code> (Line)</p>
+                        <ol style="margin-top: 10px; line-height: 1.8;">
+                            <li>Buat garis menggunakan perintah <code>L</code></li>
+                            <li>Buat garis sepanjang <strong>600</strong> di tengah</li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen jendela/kedua.png" alt="Garis Tengah" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Mirror Kusen</h4>
+                        <p><strong>Perintah:</strong> <code>MI</code> (Mirror)</p>
+                        <ol style="margin-top: 10px; line-height: 1.8;">
+                            <li>Select objek kusen</li>
+                            <li>Ketik <code>MI</code> lalu <kbd>Enter</kbd></li>
+                            <li>Klik <strong>Midpoint</strong> pada garis tengah</li>
+                            <li>Tarik ke atas dan klik <kbd>Enter</kbd></li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen jendela/ketiga.png" alt="Mirror Kusen Jendela" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Membuat Rectangle Daun Jendela</h4>
+                        <p><strong>Perintah:</strong> <code>REC</code> (Rectangle)</p>
+                        <ol style="margin-top: 10px; line-height: 1.8;">
+                            <li>Ketik <code>REC</code> lalu <kbd>Enter</kbd></li>
+                            <li>Klik dari <strong>titik atas kusen kiri</strong> ke <strong>kusen kanan bawah</strong></li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen jendela/keempat.png" alt="Rectangle Jendela" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Membuat Frame Kiri Daun Jendela</h4>
+                        <p><strong>Perintah:</strong> <code>L</code> (Line)</p>
+                        <ol style="margin-top: 10px; line-height: 1.8;">
+                            <li>Buat frame kiri dengan perintah <code>L</code> lalu <kbd>Enter</kbd></li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen jendela/kelima.png" alt="Frame Kiri" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h4>Geser Frame dengan Move</h4>
+                        <p><strong>Perintah:</strong> <code>M</code> (Move)</p>
+                        <ol style="margin-top: 10px; line-height: 1.8;">
+                            <li>Geser menggunakan perintah <code>M</code></li>
+                            <li>Masukkan angka <strong>80</strong> lalu <kbd>Enter</kbd></li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen jendela/keenam.png" alt="Move Frame" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h4>Mirror Frame Kanan</h4>
+                        <p><strong>Perintah:</strong> <code>MI</code> (Mirror)</p>
+                        <ol style="margin-top: 10px; line-height: 1.8;">
+                            <li>Seleksi line yang sudah digeser</li>
+                            <li>Ketik <code>MI</code> lalu <kbd>Enter</kbd></li>
+                            <li>Klik <strong>Midpoint</strong> pada garis tengah</li>
+                            <li>Tarik ke atas kemudian <kbd>Enter</kbd></li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen jendela/ketujuh.png" alt="Mirror Frame Kanan" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">8</div>
+                    <div class="step-content">
+                        <h4>Membuat Kaca Jendela</h4>
+                        <p><strong>Perintah:</strong> <code>L</code> (Line)</p>
+                        <ol style="margin-top: 10px; line-height: 1.8;">
+                            <li>Buat kaca dengan <code>L</code> lalu <kbd>Enter</kbd></li>
+                            <li>Arahkan dari <strong>titik kiri</strong> ke <strong>titik kanan</strong></li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen jendela/kedelapan.png" alt="Line Kaca" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">9</div>
+                    <div class="step-content">
+                        <h4>Mengatur Ketebalan Kaca</h4>
+                        <p><strong>Perintah:</strong> <code>PE</code> (Polyline Edit)</p>
+                        <ol style="margin-top: 10px; line-height: 1.8;">
+                            <li>Seleksi line kaca</li>
+                            <li>Ketik <code>PE</code> lalu <kbd>Enter</kbd></li>
+                            <li>Pilih opsi <strong>Width</strong></li>
+                            <li>Isikan nilai <strong>5</strong> lalu tekan <kbd>Esc</kbd></li>
+                        </ol>
+                        <div class="image-container">
+                            <img src="Assets/tambahan materi persiapan menggambar/cara membuat kusen pintu dan jendela/kusen jendela/kesembilan.png" alt="Set Width Kaca" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                        </div>
+                        <div class="alert-box" style="background: #d4edda; border-left-color: #28a745; margin-top: 15px;">
+                            <strong>✅ Selesai!</strong> Kusen jendela untuk denah sudah jadi.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Section -->
+            <div class="content-section">
+                <h3>📚 Ringkasan Perintah</h3>
+                <div class="summary-grid">
+                    <div class="summary-card">
+                        <div class="summary-icon">📏</div>
+                        <div class="summary-title">POLYLINE (PL)</div>
+                        <p>Membuat frame kusen dengan garis satu kesatuan yang bisa diatur ketebalannya.</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">▭</div>
+                        <div class="summary-title">RECTANGLE (REC)</div>
+                        <p>Membuat daun pintu/jendela dengan cepat menggunakan relative coordinate.</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">🪞</div>
+                        <div class="summary-title">MIRROR (MI)</div>
+                        <p>Mencerminkan kusen untuk simetri sempurna dengan midpoint sebagai sumbu.</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">🔄</div>
+                        <div class="summary-title">ROTATE (RO)</div>
+                        <p>Memutar daun pintu 90° untuk posisi terbuka pada denah.</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">⌒</div>
+                        <div class="summary-title">ARC (A)</div>
+                        <p>Membuat busur bukaan pintu dengan 3 titik: awal, tengah, dan akhir.</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">📐</div>
+                        <div class="summary-title">LINE (L)</div>
+                        <p>Membuat garis tengah dan frame daun jendela dengan ukuran presisi.</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">➡️</div>
+                        <div class="summary-title">MOVE (M)</div>
+                        <p>Menggeser frame jendela dengan jarak tertentu (80 unit).</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">✏️</div>
+                        <div class="summary-title">PEDIT (PE)</div>
+                        <p>Mengatur ketebalan line kaca dengan opsi Width = 5.</p>
+                    </div>
+                </div>
+
+                <div class="alert-box" style="background: #e7f3ff; border-left-color: #2196F3;">
+                    <strong>💡 Tips Praktis:</strong>
+                    <ul style="margin: 10px 0 0 20px; line-height: 1.8;">
+                        <li>✅ Gunakan <strong>OSNAP (F3)</strong> untuk presisi saat mirror dan rotate</li>
+                        <li>✅ <strong>Midpoint</strong> adalah kunci untuk mirror yang simetris</li>
+                        <li>✅ Gunakan <strong>relative coordinate (@x,y)</strong> untuk ukuran tepat</li>
+                        <li>✅ Arc dengan 3 titik lebih mudah dikontrol untuk bukaan pintu</li>
+                        <li>✅ Polyline Edit (PE) berguna untuk mengubah line menjadi polyline dengan ketebalan</li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="back-btn" onclick="backToMenu()">← Kembali ke Menu</button>
+        </div>
+
+        <!-- Content Section 7: Mini Quiz -->
+        <div id="content7" class="content">
             <h2>🎯 Mini Quiz AutoCAD</h2>
             <p class="quiz-intro">Uji pengetahuan Anda dengan 10 soal pilihan ganda!</p>
 
@@ -2117,7 +2511,6 @@
                 <form id="quizForm">
                     <!-- Question 1 -->
                     <div class="quiz-card" data-question="1">
-                        <div class="question-number">Soal 1</div>
                         <p class="question-text">Perintah singkat untuk membuat garis di command line adalah...</p>
                         <div class="options-grid">
                             <label class="option-card">
@@ -2146,7 +2539,6 @@
 
                     <!-- Question 2 -->
                     <div class="quiz-card" data-question="2">
-                        <div class="question-number">Soal 2</div>
                         <p class="question-text">Perintah untuk menghapus objek adalah...</p>
                         <div class="options-grid">
                             <label class="option-card">
@@ -2175,28 +2567,27 @@
 
                     <!-- Question 3 -->
                     <div class="quiz-card" data-question="3">
-                        <div class="question-number">Soal 3</div>
-                        <p class="question-text">Perintah untuk membuka Drawing Units adalah...</p>
+                        <p class="question-text">Perintah untuk memotong/menghapus bagian garis yang berpotongan adalah...</p>
                         <div class="options-grid">
                             <label class="option-card">
-                                <input type="radio" name="q3" value="units">
+                                <input type="radio" name="q3" value="TR">
                                 <span class="option-content">
                                     <span class="option-letter">A</span>
-                                    <span class="option-text">units</span>
+                                    <span class="option-text">TR (TRIM)</span>
                                 </span>
                             </label>
                             <label class="option-card">
-                                <input type="radio" name="q3" value="dimstyle">
+                                <input type="radio" name="q3" value="O">
                                 <span class="option-content">
                                     <span class="option-letter">B</span>
-                                    <span class="option-text">dimstyle</span>
+                                    <span class="option-text">O (OFFSET)</span>
                                 </span>
                             </label>
                             <label class="option-card">
-                                <input type="radio" name="q3" value="la">
+                                <input type="radio" name="q3" value="E">
                                 <span class="option-content">
                                     <span class="option-letter">C</span>
-                                    <span class="option-text">la</span>
+                                    <span class="option-text">E (ERASE)</span>
                                 </span>
                             </label>
                         </div>
@@ -2204,28 +2595,27 @@
 
                     <!-- Question 4 -->
                     <div class="quiz-card" data-question="4">
-                        <div class="question-number">Soal 4</div>
-                        <p class="question-text">Untuk membuat layer baru, perintah singkatnya adalah...</p>
+                        <p class="question-text">Perintah untuk menggandakan objek dengan jarak tertentu adalah...</p>
                         <div class="options-grid">
-                            <label class="option-card">
-                                <input type="radio" name="q4" value="LA">
-                                <span class="option-content">
-                                    <span class="option-letter">A</span>
-                                    <span class="option-text">LA</span>
-                                </span>
-                            </label>
-                            <label class="option-card">
-                                <input type="radio" name="q4" value="L">
-                                <span class="option-content">
-                                    <span class="option-letter">B</span>
-                                    <span class="option-text">L</span>
-                                </span>
-                            </label>
                             <label class="option-card">
                                 <input type="radio" name="q4" value="O">
                                 <span class="option-content">
+                                    <span class="option-letter">A</span>
+                                    <span class="option-text">O (OFFSET)</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q4" value="CO">
+                                <span class="option-content">
+                                    <span class="option-letter">B</span>
+                                    <span class="option-text">CO (COPY)</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="q4" value="M">
+                                <span class="option-content">
                                     <span class="option-letter">C</span>
-                                    <span class="option-text">O</span>
+                                    <span class="option-text">M (MOVE)</span>
                                 </span>
                             </label>
                         </div>
@@ -2233,28 +2623,27 @@
 
                     <!-- Question 5 -->
                     <div class="quiz-card" data-question="5">
-                        <div class="question-number">Soal 5</div>
-                        <p class="question-text">Format input rectangle untuk kertas A4 adalah...</p>
+                        <p class="question-text">Perintah untuk membuat arsiran/hatch adalah...</p>
                         <div class="options-grid">
                             <label class="option-card">
-                                <input type="radio" name="q5" value="@210,297">
+                                <input type="radio" name="q5" value="H">
                                 <span class="option-content">
                                     <span class="option-letter">A</span>
-                                    <span class="option-text">@210,297</span>
+                                    <span class="option-text">H (HATCH)</span>
                                 </span>
                             </label>
                             <label class="option-card">
-                                <input type="radio" name="q5" value="@297,420">
+                                <input type="radio" name="q5" value="HE">
                                 <span class="option-content">
                                     <span class="option-letter">B</span>
-                                    <span class="option-text">@297,420</span>
+                                    <span class="option-text">HE (HATCHEDIT)</span>
                                 </span>
                             </label>
                             <label class="option-card">
-                                <input type="radio" name="q5" value="@420,594">
+                                <input type="radio" name="q5" value="B">
                                 <span class="option-content">
                                     <span class="option-letter">C</span>
-                                    <span class="option-text">@420,594</span>
+                                    <span class="option-text">B (BOUNDARY)</span>
                                 </span>
                             </label>
                         </div>
@@ -2262,28 +2651,27 @@
 
                     <!-- Question 6 -->
                     <div class="quiz-card" data-question="6">
-                        <div class="question-number">Soal 6</div>
-                        <p class="question-text">Perintah untuk memecah objek menjadi bagian adalah...</p>
+                        <p class="question-text">Perintah untuk mencerminkan objek secara simetris adalah...</p>
                         <div class="options-grid">
                             <label class="option-card">
-                                <input type="radio" name="q6" value="X">
+                                <input type="radio" name="q6" value="MI">
                                 <span class="option-content">
                                     <span class="option-letter">A</span>
-                                    <span class="option-text">X (EXPLODE)</span>
+                                    <span class="option-text">MI (MIRROR)</span>
                                 </span>
                             </label>
                             <label class="option-card">
-                                <input type="radio" name="q6" value="TR">
+                                <input type="radio" name="q6" value="RO">
                                 <span class="option-content">
                                     <span class="option-letter">B</span>
-                                    <span class="option-text">TR</span>
+                                    <span class="option-text">RO (ROTATE)</span>
                                 </span>
                             </label>
                             <label class="option-card">
-                                <input type="radio" name="q6" value="H">
+                                <input type="radio" name="q6" value="CO">
                                 <span class="option-content">
                                     <span class="option-letter">C</span>
-                                    <span class="option-text">H</span>
+                                    <span class="option-text">CO (COPY)</span>
                                 </span>
                             </label>
                         </div>
@@ -2291,28 +2679,27 @@
 
                     <!-- Question 7 -->
                     <div class="quiz-card" data-question="7">
-                        <div class="question-number">Soal 7</div>
-                        <p class="question-text">Pattern AutoCAD yang biasa dipakai untuk beton arsitektur adalah...</p>
+                        <p class="question-text">Perintah untuk memutar objek dengan sudut tertentu adalah...</p>
                         <div class="options-grid">
                             <label class="option-card">
-                                <input type="radio" name="q7" value="AR-CONC">
+                                <input type="radio" name="q7" value="RO">
                                 <span class="option-content">
                                     <span class="option-letter">A</span>
-                                    <span class="option-text">AR-CONC</span>
+                                    <span class="option-text">RO (ROTATE)</span>
                                 </span>
                             </label>
                             <label class="option-card">
-                                <input type="radio" name="q7" value="EARTH">
+                                <input type="radio" name="q7" value="MI">
                                 <span class="option-content">
                                     <span class="option-letter">B</span>
-                                    <span class="option-text">EARTH</span>
+                                    <span class="option-text">MI (MIRROR)</span>
                                 </span>
                             </label>
                             <label class="option-card">
-                                <input type="radio" name="q7" value="GRAVEL">
+                                <input type="radio" name="q7" value="SC">
                                 <span class="option-content">
                                     <span class="option-letter">C</span>
-                                    <span class="option-text">GRAVEL</span>
+                                    <span class="option-text">SC (SCALE)</span>
                                 </span>
                             </label>
                         </div>
@@ -2320,28 +2707,27 @@
 
                     <!-- Question 8 -->
                     <div class="quiz-card" data-question="8">
-                        <div class="question-number">Soal 8</div>
-                        <p class="question-text">Perintah untuk membuat arsiran baru adalah...</p>
+                        <p class="question-text">Perintah untuk membuat busur/arc pada bukaan pintu adalah...</p>
                         <div class="options-grid">
                             <label class="option-card">
-                                <input type="radio" name="q8" value="H">
+                                <input type="radio" name="q8" value="A">
                                 <span class="option-content">
                                     <span class="option-letter">A</span>
-                                    <span class="option-text">H</span>
+                                    <span class="option-text">A (ARC)</span>
                                 </span>
                             </label>
                             <label class="option-card">
-                                <input type="radio" name="q8" value="HE">
+                                <input type="radio" name="q8" value="C">
                                 <span class="option-content">
                                     <span class="option-letter">B</span>
-                                    <span class="option-text">HE</span>
+                                    <span class="option-text">C (CIRCLE)</span>
                                 </span>
                             </label>
                             <label class="option-card">
-                                <input type="radio" name="q8" value="B">
+                                <input type="radio" name="q8" value="PL">
                                 <span class="option-content">
                                     <span class="option-letter">C</span>
-                                    <span class="option-text">BOUNDARY</span>
+                                    <span class="option-text">PL (POLYLINE)</span>
                                 </span>
                             </label>
                         </div>
@@ -2349,28 +2735,27 @@
 
                     <!-- Question 9 -->
                     <div class="quiz-card" data-question="9">
-                        <div class="question-number">Soal 9</div>
-                        <p class="question-text">Perintah untuk mengulang jarak offset terakhir adalah...</p>
+                        <p class="question-text">Perintah untuk membuat frame kusen pintu/jendela dengan garis satu kesatuan adalah...</p>
                         <div class="options-grid">
                             <label class="option-card">
-                                <input type="radio" name="q9" value="Enter">
+                                <input type="radio" name="q9" value="PL">
                                 <span class="option-content">
                                     <span class="option-letter">A</span>
-                                    <span class="option-text">Tekan Enter tanpa angka</span>
+                                    <span class="option-text">PL (POLYLINE)</span>
                                 </span>
                             </label>
                             <label class="option-card">
-                                <input type="radio" name="q9" value="0">
+                                <input type="radio" name="q9" value="L">
                                 <span class="option-content">
                                     <span class="option-letter">B</span>
-                                    <span class="option-text">0</span>
+                                    <span class="option-text">L (LINE)</span>
                                 </span>
                             </label>
                             <label class="option-card">
-                                <input type="radio" name="q9" value="R">
+                                <input type="radio" name="q9" value="REC">
                                 <span class="option-content">
                                     <span class="option-letter">C</span>
-                                    <span class="option-text">R</span>
+                                    <span class="option-text">REC (RECTANGLE)</span>
                                 </span>
                             </label>
                         </div>
@@ -2378,31 +2763,41 @@
 
                     <!-- Question 10 -->
                     <div class="quiz-card" data-question="10">
-                        <div class="question-number">Soal 10</div>
-                        <p class="question-text">Tombol fungsi untuk mengaktifkan OSNAP adalah...</p>
+                        <p class="question-text">Untuk mengatur ketebalan garis kaca jendela, perintah yang digunakan adalah...</p>
                         <div class="options-grid">
                             <label class="option-card">
-                                <input type="radio" name="q10" value="F3">
+                                <input type="radio" name="q10" value="PE">
                                 <span class="option-content">
                                     <span class="option-letter">A</span>
-                                    <span class="option-text">F3</span>
+                                    <span class="option-text">PE (PEDIT) - Width</span>
                                 </span>
                             </label>
                             <label class="option-card">
-                                <input type="radio" name="q10" value="F8">
+                                <input type="radio" name="q10" value="LW">
                                 <span class="option-content">
                                     <span class="option-letter">B</span>
-                                    <span class="option-text">F8</span>
+                                    <span class="option-text">LW (LINEWEIGHT)</span>
                                 </span>
                             </label>
                             <label class="option-card">
-                                <input type="radio" name="q10" value="F7">
+                                <input type="radio" name="q10" value="SC">
                                 <span class="option-content">
                                     <span class="option-letter">C</span>
-                                    <span class="option-text">F7</span>
+                                    <span class="option-text">SC (SCALE)</span>
                                 </span>
                             </label>
                         </div>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <div class="quiz-navigation">
+                        <button type="button" class="btn-nav btn-prev" onclick="previousQuestion()" id="prevBtn">
+                            <span>← Sebelumnya</span>
+                        </button>
+                        <span class="question-indicator" id="questionIndicator">Soal 1 dari 10</span>
+                        <button type="button" class="btn-nav btn-next" onclick="nextQuestion()" id="nextBtn">
+                            <span>Selanjutnya →</span>
+                        </button>
                     </div>
 
                     <div class="quiz-actions">

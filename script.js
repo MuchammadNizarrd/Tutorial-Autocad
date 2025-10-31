@@ -10,6 +10,11 @@ function showContent(num) {
     
     // Show selected content
     document.getElementById('content' + num).classList.add('active');
+    
+    // Initialize quiz navigation if content 7 (quiz)
+    if (num === 7) {
+        initQuizNavigation();
+    }
 }
 
 function backToMenu() {
@@ -21,6 +26,61 @@ function backToMenu() {
     
     // Show main menu
     document.getElementById('mainMenu').style.display = 'grid';
+}
+
+// --- Quiz Navigation ---
+let currentQuestion = 1;
+const totalQuestions = 10;
+
+function initQuizNavigation() {
+    currentQuestion = 1;
+    showQuestion(currentQuestion);
+    updateNavigationButtons();
+}
+
+function showQuestion(questionNumber) {
+    const cards = document.querySelectorAll('.quiz-card');
+    cards.forEach((card, index) => {
+        card.classList.remove('active');
+        if (index + 1 === questionNumber) {
+            card.classList.add('active');
+        }
+    });
+    
+    // Update indicator
+    const indicator = document.getElementById('questionIndicator');
+    if (indicator) {
+        indicator.textContent = `Soal ${questionNumber} dari ${totalQuestions}`;
+    }
+}
+
+function updateNavigationButtons() {
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    
+    if (prevBtn) {
+        prevBtn.disabled = currentQuestion === 1;
+    }
+    
+    if (nextBtn) {
+        nextBtn.disabled = currentQuestion === totalQuestions;
+    }
+}
+
+function previousQuestion() {
+    if (currentQuestion > 1) {
+        currentQuestion--;
+        showQuestion(currentQuestion);
+        updateNavigationButtons();
+    }
+}
+
+function nextQuestion() {
+    if (currentQuestion < totalQuestions) {
+        currentQuestion++;
+        showQuestion(currentQuestion);
+        updateNavigationButtons();
+    }
 }
 
 // --- Quiz logic ---
@@ -68,21 +128,38 @@ function gradeQuiz() {
     const answers = {
         q1: 'L',
         q2: 'E',
-        q3: 'units',
-        q4: 'LA',
-        q5: '@210,297',
-        q6: 'X',
-        q7: 'AR-CONC',
-        q8: 'H',
-        q9: 'Enter',
-        q10: 'F3'
+        q3: 'TR',
+        q4: 'O',
+        q5: 'H',
+        q6: 'MI',
+        q7: 'RO',
+        q8: 'A',
+        q9: 'PL',
+        q10: 'PE'
     };
 
     const form = document.getElementById('quizForm');
     if (!form) return;
 
+    // Check if all questions are answered
+    let allAnswered = true;
+    for (let i = 1; i <= 10; i++) {
+        const name = 'q' + i;
+        const node = form.querySelector('input[name="'+name+'"]:checked');
+        if (!node) {
+            allAnswered = false;
+            break;
+        }
+    }
+
+    // If not all answered, show alert and return
+    if (!allAnswered) {
+        showCustomAlert('⚠️ Harap jawab semua soal terlebih dahulu!\n\nAnda harus menjawab semua 10 soal sebelum submit.');
+        return;
+    }
+
     let totalCorrect = 0;
-    const perSub = {1:0,2:0,3:0,4:0,5:0};
+    const perSub = {1:0,2:0,3:0,4:0,5:0,6:0};
 
     for (let i = 1; i <= 10; i++) {
         const name = 'q' + i;
@@ -143,9 +220,9 @@ function gradeQuiz() {
     
     // Per-subchapter breakdown
     html += '<div class="summary-grid">';
-    const topics = ['Pengenalan Icon', 'Unit & Layer', 'Ukuran Kertas', 'Arsiran', 'Persiapan'];
-    for (let s = 1; s <= 5; s++) {
-        const score = perSub[s];
+    const topics = ['Line & Erase', 'Trim & Offset', 'Hatch', 'Mirror & Rotate', 'Arc & Polyline', 'Kusen Detail'];
+    for (let s = 1; s <= 6; s++) {
+        const score = perSub[s] || 0;
         const emoji = score === 2 ? '✅' : score === 1 ? '⚠️' : '❌';
         html += '<div class="summary-card">';
         html += '<div class="summary-title">' + emoji + ' ' + topics[s-1] + '</div>';
@@ -195,14 +272,14 @@ function gradeQuiz() {
         const questions = [
             'Perintah garis',
             'Perintah hapus',
-            'Drawing Units',
-            'Membuat layer',
-            'Format A4',
-            'Memecah objek',
-            'Pattern beton',
-            'Membuat arsiran',
-            'Mengulang offset',
-            'OSNAP toggle'
+            'Perintah trim',
+            'Perintah offset',
+            'Perintah hatch',
+            'Perintah mirror',
+            'Perintah rotate',
+            'Perintah arc',
+            'Perintah polyline',
+            'Perintah pedit'
         ];
         for (let i=1; i<=10; i++) {
             html += '<li>' + questions[i-1] + ': <code>' + answers['q'+i] + '</code></li>';
@@ -286,7 +363,112 @@ function resetQuiz() {
     resultDiv.style.display = 'none';
     resultDiv.innerHTML = '';
     
+    // Reset navigation to first question
+    currentQuestion = 1;
+    showQuestion(currentQuestion);
+    updateNavigationButtons();
+    
     // Scroll to top of quiz
-    const quiz = document.querySelector('#content6 h2');
+    const quiz = document.querySelector('#content7 h2');
     if (quiz) quiz.scrollIntoView({behavior: 'smooth'});
+}
+
+// Custom Alert Modal
+function showCustomAlert(message) {
+    // Create overlay
+    const overlay = document.createElement('div');
+    overlay.id = 'customAlertOverlay';
+    overlay.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+        animation: fadeIn 0.3s ease;
+    `;
+
+    // Create alert box
+    const alertBox = document.createElement('div');
+    alertBox.style.cssText = `
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        max-width: 500px;
+        width: 90%;
+        text-align: center;
+        animation: slideDown 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    `;
+
+    // Create icon
+    const icon = document.createElement('div');
+    icon.style.cssText = `
+        font-size: 4em;
+        margin-bottom: 20px;
+    `;
+    icon.textContent = '⚠️';
+
+    // Create message
+    const messageDiv = document.createElement('div');
+    messageDiv.style.cssText = `
+        font-size: 1.2em;
+        color: #2c3e50;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        font-weight: 600;
+    `;
+    messageDiv.innerHTML = message.replace(/\n/g, '<br>');
+
+    // Create OK button
+    const okButton = document.createElement('button');
+    okButton.textContent = 'OK, Saya Mengerti';
+    okButton.style.cssText = `
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        padding: 15px 40px;
+        border-radius: 12px;
+        font-size: 1.1em;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    `;
+
+    okButton.onmouseover = () => {
+        okButton.style.transform = 'translateY(-3px) scale(1.05)';
+        okButton.style.boxShadow = '0 10px 30px rgba(102, 126, 234, 0.5)';
+    };
+
+    okButton.onmouseout = () => {
+        okButton.style.transform = 'translateY(0) scale(1)';
+        okButton.style.boxShadow = '0 6px 20px rgba(102, 126, 234, 0.4)';
+    };
+
+    okButton.onclick = () => {
+        overlay.style.animation = 'fadeOut 0.3s ease';
+        setTimeout(() => overlay.remove(), 300);
+    };
+
+    // Assemble alert box
+    alertBox.appendChild(icon);
+    alertBox.appendChild(messageDiv);
+    alertBox.appendChild(okButton);
+    overlay.appendChild(alertBox);
+
+    // Add to document
+    document.body.appendChild(overlay);
+
+    // Close on overlay click
+    overlay.onclick = (e) => {
+        if (e.target === overlay) {
+            overlay.style.animation = 'fadeOut 0.3s ease';
+            setTimeout(() => overlay.remove(), 300);
+        }
+    };
 }
